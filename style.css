@@ -557,43 +557,41 @@ button {
   position: relative;
   z-index: 5;
   margin-left: auto;
-  padding: 15px;
 }
 
 .orbit-system-container {
-  width: 500px;
-  height: 500px;
+  width: 470px;
+  height: 470px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  user-select: none;
 }
 
 /* Center Logo Core */
 .orbit-center-core {
   position: absolute;
-  width: 126px;
-  height: 126px;
+  width: 136px;
+  height: 136px;
   border-radius: 50%;
   background: #ffffff;
   border: 3px solid #bae6fd;
-  box-shadow: 0 0 0 6px rgba(2, 132, 199, 0.08), 0 10px 28px rgba(15, 36, 64, 0.14);
+  box-shadow: 0 0 0 6px rgba(2, 132, 199, 0.08), 0 12px 32px rgba(15, 36, 64, 0.16);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 12;
-  padding: 10px 12px;
+  z-index: 10;
+  padding: 12px 14px;
   animation: centerPulse 3.5s ease-in-out infinite alternate;
   text-align: center;
 }
 
 .orbit-center-core img {
   width: 100%;
-  max-width: 104px;
+  max-width: 112px;
   height: auto;
-  max-height: 48px;
+  max-height: 52px;
   object-fit: contain;
   display: block;
 }
@@ -607,8 +605,8 @@ button {
   padding: 2px 8px;
   border-radius: 999px;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  margin-top: 4px;
+  letter-spacing: 0.6px;
+  margin-top: 5px;
   display: inline-block;
   line-height: 1.2;
 }
@@ -625,31 +623,29 @@ button {
   }
 }
 
-/* Concentric Orbit Rings - Sized for Zero Collision */
+/* Concentric Orbit Rings */
 .orbit-ring-outer {
   position: absolute;
-  width: 480px;
-  height: 480px;
+  width: 410px;
+  height: 410px;
   border-radius: 50%;
-  border: 1.5px dashed rgba(2, 132, 199, 0.40);
-  animation: rotateOrbit 48s linear infinite;
+  border: 1.5px dashed rgba(2, 132, 199, 0.38);
+  animation: rotateOrbit 36s linear infinite;
   transform-origin: center center;
 }
 
 .orbit-ring-inner {
   position: absolute;
-  width: 240px;
-  height: 240px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
-  border: 1.5px dashed rgba(242, 101, 34, 0.38);
-  animation: rotateOrbitReverse 38s linear infinite;
+  border: 1.5px dashed rgba(242, 101, 34, 0.35);
+  animation: rotateOrbitReverse 26s linear infinite;
   transform-origin: center center;
 }
 
 .orbit-system-container:hover .orbit-ring-outer,
-.orbit-system-container:hover .orbit-ring-inner,
-.orbit-system-container:hover .orbit-node-inner,
-.orbit-system-container:hover .orbit-satellite {
+.orbit-system-container:hover .orbit-ring-inner {
   animation-play-state: paused;
 }
 
@@ -666,14 +662,13 @@ button {
 /* 4 Major Orbiting Planetary Nodes (PDF Segments) */
 .orbit-node {
   position: absolute;
-  width: 68px;
-  height: 68px;
+  width: 76px;
+  height: 76px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transform-origin: center center;
-  z-index: 8;
 }
 
 .orbit-node-inner {
@@ -681,14 +676,14 @@ button {
   height: 100%;
   border-radius: 50%;
   border: 2px solid #ffffff;
-  box-shadow: 0 6px 18px rgba(15, 37, 72, 0.14);
+  box-shadow: 0 8px 22px rgba(15, 37, 72, 0.16);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   position: relative;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  animation: counterRotateOrbit 48s linear infinite;
+  animation: counterRotateOrbit 36s linear infinite;
 }
 
 .orbit-node-inner img {
@@ -698,8 +693,8 @@ button {
 }
 
 .orbit-node:hover .orbit-node-inner {
-  transform: scale(1.14);
-  box-shadow: 0 10px 26px rgba(242, 101, 34, 0.32);
+  transform: scale(1.18);
+  box-shadow: 0 14px 30px rgba(242, 101, 34, 0.35);
 }
 
 @keyframes counterRotateOrbit {
@@ -710,92 +705,73 @@ button {
 /* Floating Label Pill */
 .orbit-pill-label {
   position: absolute;
-  bottom: -20px;
+  bottom: -22px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(6px);
   padding: 3px 10px;
   border-radius: var(--radius-full);
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 700;
   color: #0f172a;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
   white-space: nowrap;
   pointer-events: none;
-  border: 1px solid #cbd5e1;
-  z-index: 10;
-  letter-spacing: 0.1px;
-  transition: border-color 0.2s, color 0.2s;
+  border: 1px solid #e2e8f0;
 }
 
-.orbit-node:hover .orbit-pill-label {
-  border-color: #f26522;
-  color: #f26522;
-}
-
-/* Position 4 Nodes on the 480px ring (Radius = 240px, Center = (240, 240), Node width = 68px -> half = 34px) */
+/* Position 4 Nodes on the 410px ring (Radius = 205px) */
 /* Top (0 deg) -> GeM & E-Procurement */
 .node-gem {
-  top: -34px;
-  left: 206px;
+  top: -38px;
+  left: 167px;
 }
 .node-gem .orbit-node-inner {
   background: #e0f2fe;
-  border-color: #bae6fd;
 }
 
 /* Right (90 deg) -> Central & State Govt */
 .node-railway {
-  top: 206px;
-  right: -34px;
+  top: 167px;
+  right: -38px;
 }
 .node-railway .orbit-node-inner {
   background: #ffedd5;
-  border-color: #fed7aa;
 }
 
 /* Bottom (180 deg) -> Municipal Corporations */
 .node-eproc {
-  bottom: -34px;
-  left: 206px;
+  bottom: -38px;
+  left: 167px;
 }
 .node-eproc .orbit-node-inner {
   background: #dcfce7;
-  border-color: #bbf7d0;
 }
 
 /* Left (270 deg) -> PSUs & Public Utilities */
 .node-psu {
-  top: 206px;
-  left: -34px;
+  top: 167px;
+  left: -38px;
 }
 .node-psu .orbit-node-inner {
   background: #f3e8ff;
-  border-color: #e9d5ff;
 }
 
-/* 5 Satellites on Inner 240px Ring (Radius = 120px, Center = (120, 120), size = 36px -> half = 18px) - PDF 5-Step Working Approach */
+/* 5 Satellites on Inner 260px Ring (Radius = 130px) - PDF 5-Step Working Approach */
 .orbit-satellite {
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   border: 2px solid #ffffff;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  animation: counterRotateOrbitReverse 38s linear infinite;
+  animation: counterRotateOrbitReverse 26s linear infinite;
   cursor: pointer;
-  z-index: 6;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.orbit-satellite:hover {
-  transform: scale(1.2);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 @keyframes counterRotateOrbitReverse {
@@ -804,67 +780,59 @@ button {
 }
 
 .orbit-satellite svg {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
 }
 
 /* Mini Step Pill for Satellites */
 .sat-step-tag {
   position: absolute;
-  top: -16px;
+  top: -18px;
   left: 50%;
   transform: translateX(-50%);
   background: #0f172a;
   color: #ffffff;
-  font-size: 0.64rem;
+  font-size: 0.65rem;
   font-weight: 700;
-  padding: 2px 7px;
+  padding: 1px 6px;
   border-radius: 999px;
   white-space: nowrap;
   pointer-events: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  letter-spacing: 0.2px;
-  transition: background 0.2s, border-color 0.2s;
-}
-
-.orbit-satellite:hover .sat-step-tag {
-  background: #f26522;
-  border-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 /* Satellite 1: Step 1 - Research (0 deg / Top) */
 .sat-research {
-  top: -18px;
-  left: 102px;
+  top: -19px;
+  left: 111px;
   background: #0284c7;
 }
 
 /* Satellite 2: Step 2 - Evaluate (72 deg / Top-Right) */
 .sat-evaluate {
-  top: 65px;
-  left: 216px;
+  top: 66px;
+  right: 4px;
   background: #f59e0b;
 }
 
 /* Satellite 3: Step 3 - Prepare (144 deg / Bottom-Right) */
 .sat-prepare {
-  top: 199px;
-  left: 173px;
+  bottom: -8px;
+  right: 46px;
   background: #10b981;
 }
 
 /* Satellite 4: Step 4 - Submit (216 deg / Bottom-Left) */
 .sat-submit {
-  top: 199px;
-  left: 31px;
+  bottom: -8px;
+  left: 46px;
   background: #ea580c;
 }
 
 /* Satellite 5: Step 5 - Follow Up (288 deg / Top-Left) */
 .sat-followup {
-  top: 65px;
-  left: -12px;
+  top: 66px;
+  left: 4px;
   background: #8b5cf6;
 }
 
@@ -1141,13 +1109,6 @@ button {
   box-shadow: 0 3px 10px rgba(242, 101, 34, 0.35);
 }
 
-@media (max-width: 1200px) {
-  .orbit-system-container {
-    transform: scale(0.92);
-    transform-origin: center center;
-  }
-}
-
 @media (max-width: 1100px) {
   .hero-layout-grid {
     grid-template-columns: 1fr;
@@ -1166,12 +1127,7 @@ button {
     justify-content: center;
   }
   .hero-orbit-wrapper {
-    margin: 20px auto 0 auto;
-    padding: 10px;
-  }
-  .orbit-system-container {
-    transform: scale(0.85);
-    transform-origin: center center;
+    margin-top: 30px;
   }
 }
 
@@ -1179,26 +1135,37 @@ button {
   .hero-title-main {
     font-size: 2.2rem;
   }
-  .hero-orbit-wrapper {
-    margin: 15px auto 0 auto;
-    padding: 0;
-    overflow: hidden;
-  }
   .orbit-system-container {
-    transform: scale(0.68);
-    transform-origin: center center;
-    margin: -50px 0;
+    width: 340px;
+    height: 340px;
   }
-}
-
-@media (max-width: 400px) {
-  .hero-title-main {
-    font-size: 1.85rem;
+  .orbit-ring-outer {
+    width: 300px;
+    height: 300px;
   }
-  .orbit-system-container {
-    transform: scale(0.58);
-    transform-origin: center center;
-    margin: -70px 0;
+  .orbit-ring-inner {
+    width: 180px;
+    height: 180px;
+  }
+  .node-gem {
+    top: -30px;
+    left: 110px;
+  }
+  .node-railway {
+    top: 110px;
+    right: -30px;
+  }
+  .node-eproc {
+    bottom: -30px;
+    left: 110px;
+  }
+  .node-psu {
+    top: 110px;
+    left: -30px;
+  }
+  .orbit-node {
+    width: 60px;
+    height: 60px;
   }
 }
 
