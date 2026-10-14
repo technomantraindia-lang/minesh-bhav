@@ -427,6 +427,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 5b. On-Page Enquiry Form Handler (PDF Page 4)
+  const onPageEnquiryForm = document.getElementById('onPageEnquiryForm');
+  if (onPageEnquiryForm) {
+    onPageEnquiryForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fullName = document.getElementById('pageFullName')?.value.trim() || 'Client';
+      const service = document.getElementById('pageServiceRequired')?.value || 'Tender Service';
+      onPageEnquiryForm.reset();
+      if (toastMsg) {
+        toastMsg.textContent = `Thank you, ${fullName}! Your enquiry for ${service} has been received. Minesh Bhav will contact you shortly.`;
+        toastMsg.classList.add('show');
+        setTimeout(() => {
+          toastMsg.classList.remove('show');
+        }, 5000);
+      }
+    });
+  }
+
   // Direct WhatsApp Button from Modal
   if (chatWhatsAppBtn) {
     chatWhatsAppBtn.addEventListener('click', () => {

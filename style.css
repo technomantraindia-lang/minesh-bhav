@@ -358,7 +358,7 @@ button {
 
 /* Left Content Column - Generously sized and perfectly readable */
 .hero-left-content {
-  max-width: 535px;
+  max-width: 610px;
   width: 100%;
   z-index: 5;
   flex-shrink: 0;
@@ -368,38 +368,38 @@ button {
 .hero-india-badge {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
   background: #e0f2fe;
   border: 1px solid #bae6fd;
-  padding: 4px 13px;
+  padding: 6px 16px;
   border-radius: var(--radius-full);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   box-shadow: 0 2px 8px rgba(1, 100, 146, 0.08);
 }
 
 .hero-india-badge .flag-svg {
-  width: 17px;
-  height: 12px;
+  width: 19px;
+  height: 13px;
   border-radius: 2px;
   object-fit: cover;
   display: block;
 }
 
 .hero-india-badge span {
-  font-size: 0.80rem;
+  font-size: 0.90rem;
   font-weight: 700;
   color: #0369a1;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.2px;
 }
 
-/* Headline - Refined & Proportional */
+/* Headline - Bold, Prominent & Commanding */
 .hero-title-main {
-  font-size: 2.05rem;
+  font-size: 3.15rem;
   font-weight: 800;
   color: #0f172a;
-  line-height: 1.22;
-  margin-bottom: 12px;
-  letter-spacing: -0.4px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: -0.6px;
 }
 
 .hero-title-main .title-accent {
@@ -412,14 +412,14 @@ button {
 
 /* Sub-categories row */
 .hero-platforms-bar {
-  font-size: 0.90rem;
+  font-size: 1.02rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 9px;
   flex-wrap: wrap;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .platform-orange {
@@ -435,37 +435,36 @@ button {
   color: #0284c7;
 }
 
-/* Description paragraph */
+/* Description paragraph - Enhanced legibility */
 .hero-desc-text {
-  font-size: 0.86rem;
+  font-size: 1.05rem;
   color: #334155;
-  line-height: 1.55;
-  margin-bottom: 16px;
-  max-width: 490px;
+  line-height: 1.65;
+  margin-bottom: 20px;
+  max-width: 580px;
   font-weight: 500;
 }
 
-/* 4 Checklist Bullet Items from PDF Core Strengths */
+/* Single Highlight Bullet Item from PDF Core Strengths */
 .hero-checklist {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 20px;
-  max-width: 500px;
+  margin-bottom: 24px;
+  max-width: 580px;
 }
 
 .checklist-row {
   display: flex;
-  align-items: flex-start;
-  gap: 9px;
-  font-size: 0.84rem;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.02rem;
   color: #1e293b;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .check-icon-circle {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: #22c55e;
   color: #ffffff;
@@ -473,12 +472,12 @@ button {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .check-icon-circle svg {
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
   stroke-width: 3;
 }
 
@@ -502,20 +501,20 @@ button {
 .btn-hero-cta {
   background-color: var(--primary-orange);
   color: #ffffff;
-  font-size: 0.94rem;
+  font-size: 1.02rem;
   font-weight: 700;
-  padding: 11px 24px;
+  padding: 13px 26px;
   border-radius: var(--radius-md);
   box-shadow: 0 4px 18px rgba(242, 101, 34, 0.35);
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
   transition: all var(--transition-normal);
 }
 
 .btn-hero-cta svg {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   transition: transform var(--transition-fast);
 }
 
@@ -533,9 +532,9 @@ button {
   background-color: #ffffff;
   color: #1e293b;
   border: 1.5px solid #cbd5e1;
-  font-size: 0.94rem;
+  font-size: 1.02rem;
   font-weight: 700;
-  padding: 10px 22px;
+  padding: 12px 24px;
   border-radius: var(--radius-md);
   transition: all var(--transition-normal);
 }
@@ -558,41 +557,43 @@ button {
   position: relative;
   z-index: 5;
   margin-left: auto;
+  padding: 15px;
 }
 
 .orbit-system-container {
-  width: 470px;
-  height: 470px;
+  width: 500px;
+  height: 500px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 /* Center Logo Core */
 .orbit-center-core {
   position: absolute;
-  width: 136px;
-  height: 136px;
+  width: 126px;
+  height: 126px;
   border-radius: 50%;
   background: #ffffff;
   border: 3px solid #bae6fd;
-  box-shadow: 0 0 0 6px rgba(2, 132, 199, 0.08), 0 12px 32px rgba(15, 36, 64, 0.16);
+  box-shadow: 0 0 0 6px rgba(2, 132, 199, 0.08), 0 10px 28px rgba(15, 36, 64, 0.14);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 10;
-  padding: 12px 14px;
+  z-index: 12;
+  padding: 10px 12px;
   animation: centerPulse 3.5s ease-in-out infinite alternate;
   text-align: center;
 }
 
 .orbit-center-core img {
   width: 100%;
-  max-width: 112px;
+  max-width: 104px;
   height: auto;
-  max-height: 52px;
+  max-height: 48px;
   object-fit: contain;
   display: block;
 }
@@ -606,8 +607,8 @@ button {
   padding: 2px 8px;
   border-radius: 999px;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
-  margin-top: 5px;
+  letter-spacing: 0.8px;
+  margin-top: 4px;
   display: inline-block;
   line-height: 1.2;
 }
@@ -624,29 +625,31 @@ button {
   }
 }
 
-/* Concentric Orbit Rings */
+/* Concentric Orbit Rings - Sized for Zero Collision */
 .orbit-ring-outer {
   position: absolute;
-  width: 410px;
-  height: 410px;
+  width: 480px;
+  height: 480px;
   border-radius: 50%;
-  border: 1.5px dashed rgba(2, 132, 199, 0.38);
-  animation: rotateOrbit 36s linear infinite;
+  border: 1.5px dashed rgba(2, 132, 199, 0.40);
+  animation: rotateOrbit 48s linear infinite;
   transform-origin: center center;
 }
 
 .orbit-ring-inner {
   position: absolute;
-  width: 260px;
-  height: 260px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
-  border: 1.5px dashed rgba(242, 101, 34, 0.35);
-  animation: rotateOrbitReverse 26s linear infinite;
+  border: 1.5px dashed rgba(242, 101, 34, 0.38);
+  animation: rotateOrbitReverse 38s linear infinite;
   transform-origin: center center;
 }
 
 .orbit-system-container:hover .orbit-ring-outer,
-.orbit-system-container:hover .orbit-ring-inner {
+.orbit-system-container:hover .orbit-ring-inner,
+.orbit-system-container:hover .orbit-node-inner,
+.orbit-system-container:hover .orbit-satellite {
   animation-play-state: paused;
 }
 
@@ -663,13 +666,14 @@ button {
 /* 4 Major Orbiting Planetary Nodes (PDF Segments) */
 .orbit-node {
   position: absolute;
-  width: 76px;
-  height: 76px;
+  width: 68px;
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transform-origin: center center;
+  z-index: 8;
 }
 
 .orbit-node-inner {
@@ -677,14 +681,14 @@ button {
   height: 100%;
   border-radius: 50%;
   border: 2px solid #ffffff;
-  box-shadow: 0 8px 22px rgba(15, 37, 72, 0.16);
+  box-shadow: 0 6px 18px rgba(15, 37, 72, 0.14);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   position: relative;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  animation: counterRotateOrbit 36s linear infinite;
+  animation: counterRotateOrbit 48s linear infinite;
 }
 
 .orbit-node-inner img {
@@ -694,8 +698,8 @@ button {
 }
 
 .orbit-node:hover .orbit-node-inner {
-  transform: scale(1.18);
-  box-shadow: 0 14px 30px rgba(242, 101, 34, 0.35);
+  transform: scale(1.14);
+  box-shadow: 0 10px 26px rgba(242, 101, 34, 0.32);
 }
 
 @keyframes counterRotateOrbit {
@@ -706,73 +710,92 @@ button {
 /* Floating Label Pill */
 .orbit-pill-label {
   position: absolute;
-  bottom: -22px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(6px);
   padding: 3px 10px;
   border-radius: var(--radius-full);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: #0f172a;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
   white-space: nowrap;
   pointer-events: none;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
+  z-index: 10;
+  letter-spacing: 0.1px;
+  transition: border-color 0.2s, color 0.2s;
 }
 
-/* Position 4 Nodes on the 410px ring (Radius = 205px) */
+.orbit-node:hover .orbit-pill-label {
+  border-color: #f26522;
+  color: #f26522;
+}
+
+/* Position 4 Nodes on the 480px ring (Radius = 240px, Center = (240, 240), Node width = 68px -> half = 34px) */
 /* Top (0 deg) -> GeM & E-Procurement */
 .node-gem {
-  top: -38px;
-  left: 167px;
+  top: -34px;
+  left: 206px;
 }
 .node-gem .orbit-node-inner {
   background: #e0f2fe;
+  border-color: #bae6fd;
 }
 
 /* Right (90 deg) -> Central & State Govt */
 .node-railway {
-  top: 167px;
-  right: -38px;
+  top: 206px;
+  right: -34px;
 }
 .node-railway .orbit-node-inner {
   background: #ffedd5;
+  border-color: #fed7aa;
 }
 
 /* Bottom (180 deg) -> Municipal Corporations */
 .node-eproc {
-  bottom: -38px;
-  left: 167px;
+  bottom: -34px;
+  left: 206px;
 }
 .node-eproc .orbit-node-inner {
   background: #dcfce7;
+  border-color: #bbf7d0;
 }
 
 /* Left (270 deg) -> PSUs & Public Utilities */
 .node-psu {
-  top: 167px;
-  left: -38px;
+  top: 206px;
+  left: -34px;
 }
 .node-psu .orbit-node-inner {
   background: #f3e8ff;
+  border-color: #e9d5ff;
 }
 
-/* 5 Satellites on Inner 260px Ring (Radius = 130px) - PDF 5-Step Working Approach */
+/* 5 Satellites on Inner 240px Ring (Radius = 120px, Center = (120, 120), size = 36px -> half = 18px) - PDF 5-Step Working Approach */
 .orbit-satellite {
   position: absolute;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   border: 2px solid #ffffff;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.14);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  animation: counterRotateOrbitReverse 26s linear infinite;
+  animation: counterRotateOrbitReverse 38s linear infinite;
   cursor: pointer;
+  z-index: 6;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.orbit-satellite:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 @keyframes counterRotateOrbitReverse {
@@ -781,59 +804,67 @@ button {
 }
 
 .orbit-satellite svg {
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
 }
 
 /* Mini Step Pill for Satellites */
 .sat-step-tag {
   position: absolute;
-  top: -18px;
+  top: -16px;
   left: 50%;
   transform: translateX(-50%);
   background: #0f172a;
   color: #ffffff;
-  font-size: 0.65rem;
+  font-size: 0.64rem;
   font-weight: 700;
-  padding: 1px 6px;
+  padding: 2px 7px;
   border-radius: 999px;
   white-space: nowrap;
   pointer-events: none;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.2px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.orbit-satellite:hover .sat-step-tag {
+  background: #f26522;
+  border-color: #ffffff;
 }
 
 /* Satellite 1: Step 1 - Research (0 deg / Top) */
 .sat-research {
-  top: -19px;
-  left: 111px;
+  top: -18px;
+  left: 102px;
   background: #0284c7;
 }
 
 /* Satellite 2: Step 2 - Evaluate (72 deg / Top-Right) */
 .sat-evaluate {
-  top: 66px;
-  right: 4px;
+  top: 65px;
+  left: 216px;
   background: #f59e0b;
 }
 
 /* Satellite 3: Step 3 - Prepare (144 deg / Bottom-Right) */
 .sat-prepare {
-  bottom: -8px;
-  right: 46px;
+  top: 199px;
+  left: 173px;
   background: #10b981;
 }
 
 /* Satellite 4: Step 4 - Submit (216 deg / Bottom-Left) */
 .sat-submit {
-  bottom: -8px;
-  left: 46px;
+  top: 199px;
+  left: 31px;
   background: #ea580c;
 }
 
 /* Satellite 5: Step 5 - Follow Up (288 deg / Top-Left) */
 .sat-followup {
-  top: 66px;
-  left: 4px;
+  top: 65px;
+  left: -12px;
   background: #8b5cf6;
 }
 
@@ -1110,6 +1141,13 @@ button {
   box-shadow: 0 3px 10px rgba(242, 101, 34, 0.35);
 }
 
+@media (max-width: 1200px) {
+  .orbit-system-container {
+    transform: scale(0.92);
+    transform-origin: center center;
+  }
+}
+
 @media (max-width: 1100px) {
   .hero-layout-grid {
     grid-template-columns: 1fr;
@@ -1128,7 +1166,12 @@ button {
     justify-content: center;
   }
   .hero-orbit-wrapper {
-    margin-top: 30px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+  }
+  .orbit-system-container {
+    transform: scale(0.85);
+    transform-origin: center center;
   }
 }
 
@@ -1136,37 +1179,26 @@ button {
   .hero-title-main {
     font-size: 2.2rem;
   }
+  .hero-orbit-wrapper {
+    margin: 15px auto 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
   .orbit-system-container {
-    width: 340px;
-    height: 340px;
+    transform: scale(0.68);
+    transform-origin: center center;
+    margin: -50px 0;
   }
-  .orbit-ring-outer {
-    width: 300px;
-    height: 300px;
+}
+
+@media (max-width: 400px) {
+  .hero-title-main {
+    font-size: 1.85rem;
   }
-  .orbit-ring-inner {
-    width: 180px;
-    height: 180px;
-  }
-  .node-gem {
-    top: -30px;
-    left: 110px;
-  }
-  .node-railway {
-    top: 110px;
-    right: -30px;
-  }
-  .node-eproc {
-    bottom: -30px;
-    left: 110px;
-  }
-  .node-psu {
-    top: 110px;
-    left: -30px;
-  }
-  .orbit-node {
-    width: 60px;
-    height: 60px;
+  .orbit-system-container {
+    transform: scale(0.58);
+    transform-origin: center center;
+    margin: -70px 0;
   }
 }
 
@@ -3695,57 +3727,22 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   12. TESTIMONIALS SECTION
+   12. OUR EXPERTISE & CORE STRENGTHS (EXACT PDF PAGE 2)
    -------------------------------------------------------------------------- */
-.testimonials-section {
-  padding: 65px 0 75px 0;
-  background-color: #ffffff;
+.expertise-section {
+  padding: 80px 0 85px 0;
+  background-color: #f8fbfe;
   position: relative;
 }
 
-.testimonials-slider-wrap {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.slider-nav-btn {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 1.5px solid #cbd5e1;
-  color: var(--primary-navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  transition: all var(--transition-fast);
-}
-
-.slider-nav-btn:hover {
-  border-color: transparent;
-  color: #ffffff;
-  background: linear-gradient(135deg, #f26522 0%, #f59e0b 100%);
-  transform: scale(1.08);
-  box-shadow: 0 4px 14px rgba(242, 101, 34, 0.35);
-}
-
-.slider-nav-btn svg {
-  width: 16px;
-  height: 16px;
-}
-
-.testimonials-grid {
+.strengths-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  flex: 1;
+  gap: 24px;
+  margin-top: 36px;
 }
 
-.testimonial-card {
+.strength-card {
   background-color: #ffffff;
   border: 1.5px solid var(--border-card);
   border-radius: var(--radius-md);
@@ -3753,144 +3750,303 @@ button {
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
-  transition: all var(--transition-normal);
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 32px rgba(19, 42, 94, 0.08), 0 0 18px rgba(242, 101, 34, 0.12);
-  border-color: rgba(242, 101, 34, 0.5);
-}
-
-.testimonial-quote-icon {
-  margin-bottom: 12px;
-}
-
-.testimonial-quote-icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.testimonial-body {
-  font-size: 0.88rem;
-  color: var(--text-body);
-  line-height: 1.6;
-  margin-bottom: 22px;
-  flex: 1;
-}
-
-.testimonial-author-box {
-  margin-top: auto;
-}
-
-.testimonial-client {
-  font-size: 0.94rem;
-  font-weight: 800;
-  color: var(--primary-navy);
-  margin-bottom: 2px;
-}
-
-.testimonial-loc {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-}
-
-/* --------------------------------------------------------------------------
-   13. LATEST INSIGHTS SECTION (BLOGS)
-   -------------------------------------------------------------------------- */
-.insights-section {
-  padding: 65px 0 75px 0;
-  background-color: #f8fbfe;
-}
-
-.insights-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.insight-card {
-  background-color: #ffffff;
-  border: 1.5px solid var(--border-card);
-  border-radius: var(--radius-md);
-  padding: 14px;
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  align-items: center;
-  gap: 16px;
+  position: relative;
   transition: all var(--transition-normal);
   cursor: pointer;
 }
 
-.insight-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(19, 42, 94, 0.09), 0 0 16px rgba(242, 101, 34, 0.12);
+.strength-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(19, 42, 94, 0.08), 0 0 18px rgba(242, 101, 34, 0.12);
   border-color: rgba(242, 101, 34, 0.45);
 }
 
-.insight-thumb {
-  width: 90px;
-  height: 90px;
-  flex-shrink: 0;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
+.strength-num {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  letter-spacing: -0.5px;
 }
 
-.insight-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-normal);
-}
-
-.insight-card:hover .insight-thumb img {
-  transform: scale(1.06);
-}
-
-.insight-content {
+.strength-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
 }
 
-.insight-title {
-  font-size: 0.88rem;
-  font-weight: 700;
+.strength-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.strength-title {
+  font-size: 1.05rem;
+  font-weight: 800;
   color: var(--primary-navy);
   line-height: 1.35;
-  margin-bottom: 8px;
-  transition: color 0.2s ease;
+  margin-bottom: 10px;
 }
 
-.insight-card:hover .insight-title {
-  color: #f26522;
+.strength-desc {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.6;
 }
 
-.insight-link {
+.strength-card.strength-card-highlight {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+  border-color: #93c5fd;
+}
+
+.strength-card.strength-card-highlight .strength-icon {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.strength-card.strength-card-highlight .strength-num {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* --------------------------------------------------------------------------
+   13. ENQUIRY — WEBSITE CONTACT SECTION (EXACT PDF PAGE 4)
+   -------------------------------------------------------------------------- */
+.enquiry-section {
+  padding: 85px 0 95px 0;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.enquiry-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.enquiry-info-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.enquiry-heading {
+  font-size: 2.35rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.enquiry-desc {
+  font-size: 1.02rem;
+  color: #475569;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+.whatsapp-card-box {
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 18px rgba(34, 197, 94, 0.08);
+}
+
+.whatsapp-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.whatsapp-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.whatsapp-icon-circle svg {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-card-header h4 {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #14532d;
+  margin-bottom: 2px;
+}
+
+.whatsapp-card-header span {
   font-size: 0.82rem;
+  color: #166534;
+}
+
+.whatsapp-quote-text {
+  font-size: 0.90rem;
+  color: #1e293b;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 18px;
+  background: #ffffff;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border-left: 3px solid #22c55e;
+}
+
+.btn-whatsapp-direct {
+  background-color: #22c55e;
+  color: #ffffff;
   font-weight: 700;
-  color: #f26522;
+  font-size: 0.95rem;
+  padding: 11px 22px;
+  border-radius: var(--radius-md);
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  margin-top: auto;
-  transition: all 0.2s ease;
+  gap: 8px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
 }
 
-.insight-link:hover {
-  color: #ea580c;
-  gap: 9px;
+.btn-whatsapp-direct:hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(34, 197, 94, 0.35);
 }
 
-.insight-link svg {
-  width: 12px;
-  height: 12px;
-  transition: transform var(--transition-fast);
+.enquiry-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.insight-link:hover svg {
-  transform: translateX(4px);
+.enquiry-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.92rem;
+  color: #334155;
+}
+
+.detail-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #e0f2fe;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.detail-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.enquiry-detail-row strong {
+  margin-right: 6px;
+  color: var(--primary-navy);
+}
+
+.enquiry-detail-row a {
+  color: #f26522;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.enquiry-detail-row a:hover {
+  text-decoration: underline;
+}
+
+.enquiry-form-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.enquiry-form-header h3 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  margin-bottom: 6px;
+}
+
+.enquiry-form-header p {
+  font-size: 0.90rem;
+  color: var(--text-muted);
+  margin-bottom: 22px;
+}
+
+.form-row-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.btn-submit-full {
+  width: 100%;
+  justify-content: center;
+  padding: 14px 24px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+@media (max-width: 992px) {
+  .strengths-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .strength-card.strength-card-highlight {
+    grid-column: span 2;
+  }
+  .enquiry-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+  .strength-card.strength-card-highlight {
+    grid-column: span 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .strength-card.strength-card-highlight .strength-num {
+    top: 20px;
+    transform: none;
+  }
+  .form-row-duo {
+    grid-template-columns: 1fr;
+  }
+  .enquiry-form-card {
+    padding: 24px 18px;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -4338,10 +4494,10 @@ button {
     padding: 20px 16px;
   }
   .hero-left-content {
-    max-width: 470px;
+    max-width: 520px;
   }
   .hero-title-main {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   .orbit-system-container {
     transform: scale(0.85);
@@ -4554,10 +4710,16 @@ button {
     height: 48px;
   }
   .hero-title-main {
-    font-size: 1.65rem;
+    font-size: 2.1rem;
   }
   .hero-platforms-bar {
-    font-size: 0.85rem;
+    font-size: 0.92rem;
+  }
+  .hero-desc-text {
+    font-size: 0.95rem;
+  }
+  .checklist-row {
+    font-size: 0.94rem;
   }
   .orbit-system-container {
     transform: scale(0.68);
