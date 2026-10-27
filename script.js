@@ -284,13 +284,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      const href = link.getAttribute('href');
-      if (href && (href === `#${current}` || (current === '' && href === '#'))) {
-        link.classList.add('active');
-      }
-    });
+    const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/') || !window.location.pathname.includes('.html');
+    if (isHomePage) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        const href = link.getAttribute('href');
+        if (href && (href === `#${current}` || (current === '' && (href === '#' || href === 'index.html')))) {
+          link.classList.add('active');
+        }
+      });
+    }
 
     if (!scrollTicking) {
       window.requestAnimationFrame(updateHeaderScrollState);
@@ -989,6 +992,43 @@ document.addEventListener('DOMContentLoaded', () => {
     nextPillarBtn.addEventListener('click', () => {
       const next = currentPillar < whyPillarsData.length ? currentPillar + 1 : 1;
       updatePillarSpotlight(next, true);
+    });
+  }
+
+  // =========================================================================
+  // Enquiry Page: FAQ Accordion Toggle & Form Logic
+  // =========================================================================
+  const faqItems = document.querySelectorAll('.faq-accordion-item');
+  if (faqItems.length > 0) {
+    faqItems.forEach(item => {
+      const btn = item.querySelector('.faq-accordion-btn');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+          faqItems.forEach(other => {
+            if (other !== item) other.classList.remove('active');
+          });
+          if (!isActive) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+    });
+  }
+
+  const enquiryPageForm = document.getElementById('enquiryPageForm');
+  if (enquiryPageForm) {
+    enquiryPageForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const toast = document.getElementById('toastMsg');
+      if (toast) {
+        toast.textContent = 'Thank you! Your enquiry has been received. Our team will contact you shortly.';
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 5000);
+      }
+      enquiryPageForm.reset();
     });
   }
 });
