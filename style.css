@@ -257,8 +257,8 @@ button {
 }
 
 .header-logo img {
-  height: 70px;
-  max-height: 76px;
+  height: 58px;
+  max-height: 62px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -594,29 +594,30 @@ button {
 /* Center Logo Core */
 .orbit-center-core {
   position: absolute;
-  width: 136px;
-  height: 136px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   background: #ffffff;
   border: 3px solid #bae6fd;
-  box-shadow: 0 0 0 6px rgba(2, 132, 199, 0.08), 0 12px 32px rgba(15, 36, 64, 0.16);
+  box-shadow: 0 0 0 6px rgba(2, 132, 199, 0.12), 0 12px 32px rgba(15, 36, 64, 0.18);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 10;
-  padding: 12px 14px;
+  padding: 8px 10px;
   animation: centerPulse 3.5s ease-in-out infinite alternate;
   text-align: center;
 }
 
 .orbit-center-core img {
-  width: 100%;
-  max-width: 112px;
-  height: auto;
-  max-height: 52px;
+  width: 68px;
+  height: 68px;
+  max-width: 72px;
+  max-height: 72px;
   object-fit: contain;
   display: block;
+  margin: 0 auto 3px auto;
 }
 
 .orbit-center-core .core-subtext {
@@ -629,7 +630,7 @@ button {
   border-radius: 999px;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  margin-top: 5px;
+  margin-top: 2px;
   display: inline-block;
   line-height: 1.2;
 }
@@ -4890,6 +4891,8 @@ button {
   padding: 0;
   overflow: hidden;
   line-height: 0;
+  background: #081527;
+  min-height: 380px;
 }
 
 .founder-hero-bg-img {
@@ -4898,6 +4901,8 @@ button {
   height: auto;
   display: block;
   object-fit: cover;
+  min-height: 380px;
+  aspect-ratio: 1969 / 799;
 }
 
 /* Subtle dark gradient scrim on the left for maximum text contrast */
@@ -5081,6 +5086,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  .founder-hero-banner-card {
+    min-height: 280px;
+  }
+  .founder-hero-bg-img {
+    min-height: 280px;
+    height: 300px;
+    object-position: 75% center;
+  }
   .hero-live-heading {
     font-size: 1.55rem;
     top: 9%;
@@ -5907,6 +5920,7 @@ button {
   display: block;
   object-fit: cover;
   min-height: 380px;
+  aspect-ratio: 1983 / 793;
 }
 
 .services-banner-overlay {
@@ -6802,6 +6816,7 @@ button {
   display: block;
   object-fit: cover;
   min-height: 380px;
+  aspect-ratio: 2172 / 724;
 }
 
 .industries-banner-overlay {
@@ -7217,6 +7232,7 @@ button {
   display: block;
   object-fit: cover;
   min-height: 380px;
+  aspect-ratio: 2102 / 748;
 }
 
 .core-banner-overlay {
@@ -7868,6 +7884,7 @@ button {
   display: block;
   object-fit: cover;
   min-height: 380px;
+  aspect-ratio: 2172 / 724;
 }
 
 .govt-banner-overlay {
