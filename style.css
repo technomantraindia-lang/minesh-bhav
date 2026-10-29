@@ -9041,4 +9041,554 @@ button {
   }
 }
 
+/* ==========================================================================
+   OUR CLIENTS & CREDENTIALS PAGE STYLES (Accurate to Client Credentials_ page.png)
+   ========================================================================== */
+
+/* 1. Hero Banner */
+.client-hero-banner-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #071936;
+  margin: 0;
+  padding: 0;
+}
+
+.client-banner-wrap {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 0;
+  min-height: 380px;
+}
+
+.client-banner-bg-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  min-height: 380px;
+  aspect-ratio: 2048 / 574;
+}
+
+.client-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #071936 0%, rgba(7, 25, 54, 0.92) 42%, rgba(7, 25, 54, 0.6) 65%, rgba(7, 25, 54, 0.15) 100%);
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  padding: 40px 0;
+}
+
+.client-banner-overlay .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.client-banner-overlay .breadcrumb-nav {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.client-banner-overlay .breadcrumb-nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.client-banner-overlay .breadcrumb-nav a:hover {
+  color: #ffffff;
+}
+
+.client-banner-overlay .breadcrumb-separator {
+  color: #64748b;
+}
+
+.client-banner-overlay .breadcrumb-current {
+  color: #e2e8f0;
+}
+
+.client-banner-overlay .hero-live-heading {
+  font-size: clamp(2rem, 3.4vw, 3.2rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0 0 8px 0;
+}
+
+.client-banner-overlay .hero-live-subheading {
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.3px;
+}
+
+.client-banner-overlay .header-accent-line {
+  width: 54px;
+  height: 4px;
+  background: #f26522;
+  border-radius: 2px;
+  margin: 0 0 16px 0;
+}
+
+.client-banner-overlay .hero-live-lead-text {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 620px;
+  margin: 0;
+}
+
+/* 2. Trusted by Leading Government Organizations */
+.client-orgs-section {
+  padding: 65px 0 75px 0;
+  background-color: #ffffff;
+}
+
+.client-orgs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.client-org-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 22px 14px 18px 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(15, 36, 64, 0.04);
+  transition: all 0.3s ease;
+  min-height: 140px;
+}
+
+.client-org-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 36, 64, 0.1);
+  border-color: #bae6fd;
+}
+
+.client-org-logo-wrap {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.client-org-logo {
+  max-height: 52px;
+  max-width: 120px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.client-org-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #0f2440;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.client-org-sub {
+  font-size: 0.74rem;
+  color: #64748b;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* 3. Performance Metrics Full-Width Navy Banner */
+.client-stats-bar-section {
+  background: linear-gradient(135deg, #071936 0%, #0b264e 100%);
+  padding: 44px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(7, 25, 54, 0.2);
+}
+
+.client-stats-bar-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 80% 50%, rgba(2, 132, 199, 0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.client-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.client-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.client-stat-item:last-child {
+  border-right: none;
+}
+
+.client-stat-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.client-stat-icon-wrap svg {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+}
+
+.client-stat-number {
+  font-size: clamp(2.2rem, 3.4vw, 2.9rem);
+  font-weight: 900;
+  color: #f26522;
+  line-height: 1;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.client-stat-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+/* 4. Our Key Credentials Section */
+.client-credentials-section {
+  padding: 70px 0 80px 0;
+  background-color: #f8fafc;
+}
+
+.cred-carousel-container {
+  position: relative;
+  margin-top: 38px;
+}
+
+.cred-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cred-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(15, 36, 64, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.cred-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(15, 36, 64, 0.12);
+  border-color: #bae6fd;
+}
+
+.cred-img-wrap {
+  background: #ffffff;
+  padding: 14px 14px 6px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cred-img-wrap img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 207 / 154;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(15, 36, 64, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.cred-card:hover .cred-img-wrap img {
+  transform: scale(1.02);
+}
+
+.cred-card-body {
+  padding: 16px 16px 18px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cred-info {
+  flex: 1;
+}
+
+.cred-title {
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: #0f2440;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.cred-sub {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.cred-download-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0066cc;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.cred-download-btn:hover {
+  background: #0066cc;
+  color: #ffffff;
+  border-color: #0066cc;
+  transform: translateY(-2px);
+}
+
+.cred-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 4px 14px rgba(15, 36, 64, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  color: #0f2440;
+  transition: all 0.2s ease;
+}
+
+.cred-nav-btn:hover {
+  background: #0066cc;
+  color: #ffffff;
+  border-color: #0066cc;
+}
+
+.cred-nav-btn.prev {
+  left: -20px;
+}
+
+.cred-nav-btn.next {
+  right: -20px;
+}
+
+/* 5. What Our Clients Say (Testimonials) */
+.client-testimonials-section {
+  padding: 70px 0 85px 0;
+  background-color: #ffffff;
+}
+
+.testim-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 38px;
+}
+
+.testim-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 6px 22px rgba(15, 36, 64, 0.05);
+  padding: 30px 24px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.testim-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(15, 36, 64, 0.1);
+  border-color: #f26522;
+}
+
+.testim-quote-mark {
+  font-size: 3rem;
+  line-height: 0.8;
+  font-family: Georgia, serif;
+  font-weight: 900;
+  color: #f26522;
+  margin-bottom: 14px;
+  user-select: none;
+}
+
+.testim-quote-text {
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: #334155;
+  margin: 0 0 24px 0;
+  flex-grow: 1;
+}
+
+.testim-author-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 18px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.testim-avatar {
+  width: 36px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.testim-author-info {
+  flex: 1;
+}
+
+.testim-author-name {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #0f2440;
+  margin: 0 0 2px 0;
+}
+
+.testim-author-sub {
+  font-size: 0.76rem;
+  color: #64748b;
+  margin: 0 0 4px 0;
+  font-weight: 500;
+}
+
+.testim-stars {
+  color: #f59e0b;
+  font-size: 0.88rem;
+  letter-spacing: 2px;
+}
+
+/* Responsive Rules for Clients & Credentials Page */
+@media (max-width: 1024px) {
+  .client-orgs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cred-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .testim-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cred-nav-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-banner-wrap {
+    min-height: 300px;
+  }
+  .client-banner-bg-img {
+    min-height: 300px;
+    height: 320px;
+    object-position: 75% center;
+  }
+  .client-banner-overlay .hero-live-heading {
+    font-size: 1.75rem;
+  }
+  .client-orgs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .client-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 16px;
+  }
+  .client-stat-item {
+    border-right: none;
+  }
+  .client-stat-item:nth-child(1),
+  .client-stat-item:nth-child(3) {
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+  }
+  .testim-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .cred-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .client-stat-item {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 18px;
+  }
+  .client-stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
 

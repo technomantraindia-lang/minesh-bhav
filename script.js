@@ -1031,6 +1031,19 @@ document.addEventListener('DOMContentLoaded', () => {
       enquiryPageForm.reset();
     });
   }
+
+  // Credentials Carousel Navigation
+  const credGrid = document.querySelector('.cred-cards-grid');
+  const prevCredBtn = document.querySelector('.cred-nav-btn.prev');
+  const nextCredBtn = document.querySelector('.cred-nav-btn.next');
+  if (credGrid && prevCredBtn && nextCredBtn) {
+    prevCredBtn.addEventListener('click', () => {
+      credGrid.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+    nextCredBtn.addEventListener('click', () => {
+      credGrid.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+  }
 });
 
 
