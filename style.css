@@ -8280,15 +8280,16 @@ button {
   padding: 0;
   overflow: hidden;
   line-height: 0;
+  height: clamp(210px, 16vw, 260px);
 }
 
 .govt-cta-bg-img {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
-  min-height: 320px;
+  object-position: center right;
 }
 
 .govt-cta-overlay {
@@ -8299,27 +8300,28 @@ button {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: clamp(24px, 4.5vw, 65px) clamp(24px, 5.5vw, 90px);
+  padding: 0 clamp(24px, 5.5vw, 90px);
   z-index: 2;
   box-sizing: border-box;
   line-height: normal;
+  background: linear-gradient(90deg, #021738 0%, rgba(2, 23, 56, 0.95) 45%, rgba(2, 23, 56, 0.6) 70%, rgba(2, 23, 56, 0.1) 100%);
 }
 
 .govt-cta-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: clamp(340px, 48vw, 600px);
+  max-width: clamp(340px, 48vw, 580px);
   z-index: 3;
 }
 
 .govt-cta-title {
-  font-size: clamp(1.8rem, 3.2vw, 2.9rem);
+  font-size: clamp(1.45rem, 2.2vw, 2.2rem);
   font-weight: 800;
   color: #ffffff;
   line-height: 1.18;
-  letter-spacing: -0.5px;
-  margin: 0 0 clamp(8px, 1.2vw, 14px) 0;
+  letter-spacing: -0.4px;
+  margin: 0 0 clamp(6px, 0.8vw, 10px) 0;
 }
 
 .govt-cta-title .text-orange {
@@ -8327,10 +8329,21 @@ button {
 }
 
 .govt-cta-desc {
-  font-size: clamp(0.92rem, 1.1vw, 1.05rem);
+  font-size: clamp(0.85rem, 0.95vw, 0.98rem);
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.55;
-  margin: 0 0 clamp(16px, 2vw, 24px) 0;
+  line-height: 1.45;
+  margin: 0 0 clamp(12px, 1.4vw, 18px) 0;
+}
+
+.govt-cta-left .btn {
+  padding: 10px 24px;
+  font-size: 0.92rem;
+  border-radius: 50px;
+}
+
+.govt-cta-left .btn svg {
+  width: 16px;
+  height: 16px;
 }
 
 /* Responsive Media Queries for Govt Segments */
@@ -8355,15 +8368,18 @@ button {
     padding: 36px 20px 44px 20px;
     background: #012757;
   }
+  .govt-cta-banner-wrap {
+    height: auto;
+  }
   .govt-cta-overlay {
     position: relative;
-    padding: 36px 20px 44px 20px;
+    padding: 32px 20px 38px 20px;
     background: #021738;
   }
   .govt-banner-bg-img,
   .govt-cta-bg-img {
-    min-height: 200px;
-    height: 220px;
+    min-height: 180px;
+    height: 200px;
   }
   .govt-banner-left,
   .govt-cta-left {
