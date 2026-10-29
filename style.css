@@ -9076,66 +9076,83 @@ button {
 
 .client-banner-overlay {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, #071936 0%, rgba(7, 25, 54, 0.92) 42%, rgba(7, 25, 54, 0.6) 65%, rgba(7, 25, 54, 0.15) 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
+  padding: clamp(28px, 5vw, 65px) clamp(24px, 6vw, 90px);
   z-index: 2;
-  padding: 40px 0;
+  box-sizing: border-box;
+  line-height: normal;
+  background: linear-gradient(90deg, #071936 0%, rgba(7, 25, 54, 0.92) 42%, rgba(7, 25, 54, 0.6) 65%, rgba(7, 25, 54, 0.15) 100%);
 }
 
-.client-banner-overlay .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+.client-banner-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: clamp(340px, 48vw, 620px);
+  z-index: 3;
 }
 
-.client-banner-overlay .breadcrumb-nav {
-  margin-bottom: 12px;
+.client-banner-breadcrumbs {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 0.88rem;
   font-weight: 600;
   color: #94a3b8;
+  margin: 0 0 12px 0;
 }
 
-.client-banner-overlay .breadcrumb-nav a {
+.client-banner-breadcrumbs a {
   color: #94a3b8;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.client-banner-overlay .breadcrumb-nav a:hover {
+.client-banner-breadcrumbs a:hover {
   color: #ffffff;
 }
 
-.client-banner-overlay .breadcrumb-separator {
+.client-banner-breadcrumbs .bc-sep {
   color: #64748b;
+  font-size: 0.85rem;
 }
 
-.client-banner-overlay .breadcrumb-current {
+.client-banner-breadcrumbs .bc-curr {
   color: #e2e8f0;
 }
 
-.client-banner-overlay .hero-live-heading {
-  font-size: clamp(2rem, 3.4vw, 3.2rem);
+.client-banner-title {
+  position: static !important;
+  font-size: clamp(2.1rem, 3.6vw, 3.5rem);
   font-weight: 800;
   color: #ffffff;
   line-height: 1.15;
-  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+  margin: 0 0 10px 0;
+  text-align: left;
 }
 
-.client-banner-overlay .hero-live-subheading {
-  font-size: clamp(1rem, 1.6vw, 1.3rem);
+.client-banner-title .text-orange {
+  color: #f26522;
+}
+
+.client-banner-subtitle {
+  position: static !important;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 12px 0;
   letter-spacing: 0.3px;
+  line-height: 1.35;
+  text-align: left;
 }
 
-.client-banner-overlay .header-accent-line {
+.client-banner-accent {
   width: 54px;
   height: 4px;
   background: #f26522;
@@ -9143,12 +9160,13 @@ button {
   margin: 0 0 16px 0;
 }
 
-.client-banner-overlay .hero-live-lead-text {
-  font-size: 0.96rem;
+.client-banner-lead {
+  position: static !important;
+  font-size: clamp(0.88rem, 1.05vw, 0.98rem);
   line-height: 1.65;
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 620px;
+  color: rgba(255, 255, 255, 0.92);
   margin: 0;
+  text-align: left;
 }
 
 /* 2. Trusted by Leading Government Organizations */
@@ -9541,16 +9559,24 @@ button {
 }
 
 @media (max-width: 768px) {
-  .client-banner-wrap {
-    min-height: 300px;
+  .client-banner-overlay {
+    position: relative;
+    padding: 36px 20px 44px 20px;
+    background: #071936;
+  }
+  .client-banner-left {
+    max-width: 100%;
+  }
+  .client-banner-title {
+    font-size: 1.85rem;
+  }
+  .client-banner-subtitle {
+    font-size: 0.95rem;
   }
   .client-banner-bg-img {
-    min-height: 300px;
-    height: 320px;
+    min-height: 200px;
+    height: 220px;
     object-position: 75% center;
-  }
-  .client-banner-overlay .hero-live-heading {
-    font-size: 1.75rem;
   }
   .client-orgs-grid {
     grid-template-columns: repeat(2, 1fr);
