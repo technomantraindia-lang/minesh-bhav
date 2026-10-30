@@ -317,6 +317,99 @@ button {
   width: 100%;
 }
 
+/* --------------------------------------------------------------------------
+   Navigation Dropdown (Industries -> Focus Industries & Govt Segments)
+   -------------------------------------------------------------------------- */
+.nav-item.has-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dropdown-chevron {
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-item.has-dropdown:hover .dropdown-chevron,
+.nav-item.has-dropdown:focus-within .dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+.nav-item.has-dropdown::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 14px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 200px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(15, 36, 64, 0.14);
+  border: 1px solid #e2e8f0;
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1000;
+}
+
+.nav-item.has-dropdown:hover .dropdown-menu,
+.nav-item.has-dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  width: 100%;
+  display: block;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0f2440;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: #f8fafc;
+  color: #f26522;
+  padding-left: 22px;
+}
+
+.dropdown-item.active {
+  font-weight: 700;
+  border-left: 3px solid #f26522;
+}
+
 .header-cta {
   display: flex;
   align-items: center;
@@ -4559,6 +4652,36 @@ button {
   }
   .nav-menu.open {
     display: flex;
+  }
+  .nav-item.has-dropdown {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-item.has-dropdown .dropdown-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-item.has-dropdown::after {
+    display: none;
+  }
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    width: 100%;
+    padding: 6px 0;
+    margin: 6px 0 10px 0;
+  }
+  .dropdown-item {
+    padding: 9px 16px;
+    font-size: 0.86rem;
   }
   .mobile-menu-toggle {
     display: block;

@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Close menu when clicking outside or clicking any nav link
-    navMenu.querySelectorAll('.nav-link').forEach(link => {
+    navMenu.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('open');
       });
