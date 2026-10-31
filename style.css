@@ -8410,7 +8410,7 @@ button {
   padding: 0;
   overflow: hidden;
   line-height: 0;
-  height: clamp(210px, 16vw, 260px);
+  height: clamp(250px, 18.5vw, 310px);
 }
 
 .govt-cta-bg-img {
@@ -8434,7 +8434,7 @@ button {
   z-index: 2;
   box-sizing: border-box;
   line-height: normal;
-  background: linear-gradient(90deg, #021738 0%, rgba(2, 23, 56, 0.95) 45%, rgba(2, 23, 56, 0.6) 70%, rgba(2, 23, 56, 0.1) 100%);
+  background: linear-gradient(90deg, rgba(0, 14, 31, 0.92) 0%, rgba(0, 14, 31, 0.72) 42%, rgba(0, 14, 31, 0.15) 65%, transparent 100%);
 }
 
 .govt-cta-left {
