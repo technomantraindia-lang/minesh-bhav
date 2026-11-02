@@ -1409,23 +1409,7 @@ button {
 
 /* Watermark Number */
 .service-card-num {
-  position: absolute;
-  top: 18px;
-  right: 24px;
-  font-size: 3.6rem;
-  font-weight: 800;
-  line-height: 1;
-  color: rgba(15, 36, 64, 0.05);
-  font-family: 'Montserrat', sans-serif;
-  user-select: none;
-  transition: all 0.35s ease;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.service-card:hover .service-card-num {
-  color: rgba(224, 76, 56, 0.12);
-  transform: scale(1.08) translateY(-2px);
+  display: none !important;
 }
 
 /* Icon Pods with Distinct Gradients */
@@ -3846,13 +3830,7 @@ button {
 }
 
 .strength-num {
-  position: absolute;
-  top: 20px;
-  right: 22px;
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: #cbd5e1;
-  letter-spacing: -0.5px;
+  display: none !important;
 }
 
 .strength-icon {
