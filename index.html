@@ -152,14 +152,14 @@
         <div class="hero-orbit-wrapper">
           <div class="orbit-system-container">
             <!-- Central Glowing Logo Core (Click to Open Consultation Form) -->
-            <div class="orbit-center-core open-modal-btn" data-service="Tender Bidding &amp; Submission">
+            <div class="orbit-center-core open-modal-btn" role="button" tabindex="0" data-service="Tender Bidding &amp; Submission" onclick="openConsultationModal(this, event)" title="Request a Free Consultation">
               <img src="assets/logo.png" alt="Minesh Bhav Tender Bidding &amp; E-Procurement Specialist" width="973" height="289">
             </div>
 
             <!-- Outer Dashed Orbit Ring with 4 Procurement Segments -->
             <div class="orbit-ring-outer">
               <!-- Node 1: GeM & E-Procurement Portals (Top) -->
-              <div class="orbit-node node-gem open-modal-btn" data-service="GeM &amp; Procurement Support">
+              <div class="orbit-node node-gem open-modal-btn" role="button" tabindex="0" data-service="GeM &amp; Procurement Support" onclick="openConsultationModal(this, event)" title="Enquire about GeM &amp; E-Procurement Portals">
                 <div class="orbit-node-inner">
                   <img src="assets/orbit-gem.png" alt="GeM &amp; E-Procurement Portals">
                   <span class="orbit-pill-label">GeM Portals</span>
@@ -167,7 +167,7 @@
               </div>
 
               <!-- Node 2: Central & State Government (Right) -->
-              <div class="orbit-node node-railway open-modal-btn" data-service="Tender Bidding &amp; Submission">
+              <div class="orbit-node node-railway open-modal-btn" role="button" tabindex="0" data-service="Tender Bidding &amp; Submission" onclick="openConsultationModal(this, event)" title="Enquire about Central &amp; State Govt Tenders">
                 <div class="orbit-node-inner">
                   <img src="assets/orbit-railway.png" alt="Central &amp; State Government">
                   <span class="orbit-pill-label">Govt Depts</span>
@@ -175,7 +175,7 @@
               </div>
 
               <!-- Node 3: Municipal Corporations & Urban Local Bodies (Bottom) -->
-              <div class="orbit-node node-eproc open-modal-btn" data-service="Tender Tracking &amp; Research">
+              <div class="orbit-node node-eproc open-modal-btn" role="button" tabindex="0" data-service="Tender Tracking &amp; Research" onclick="openConsultationModal(this, event)" title="Enquire about Municipal Corporation Tenders">
                 <div class="orbit-node-inner">
                   <img src="assets/orbit-eproc.png" alt="Municipal Corporations">
                   <span class="orbit-pill-label">Municipal Bodies</span>
@@ -183,7 +183,7 @@
               </div>
 
               <!-- Node 4: Public Sector Undertakings (PSUs) (Left) -->
-              <div class="orbit-node node-psu open-modal-btn" data-service="Post-Bid &amp; Contract Support">
+              <div class="orbit-node node-psu open-modal-btn" role="button" tabindex="0" data-service="Post-Bid &amp; Contract Support" onclick="openConsultationModal(this, event)" title="Enquire about PSUs &amp; Utilities Tenders">
                 <div class="orbit-node-inner">
                   <img src="assets/orbit-psu.png" alt="PSUs &amp; Utilities">
                   <span class="orbit-pill-label">PSUs &amp; Utilities</span>
@@ -194,31 +194,31 @@
             <!-- Inner Orbit Ring with 5 Satellites representing 5-Step Working Approach -->
             <div class="orbit-ring-inner">
               <!-- Step 1: Research -->
-              <div class="orbit-satellite sat-research open-modal-btn" data-service="Tender Tracking &amp; Research">
+              <div class="orbit-satellite sat-research open-modal-btn" role="button" tabindex="0" data-service="Tender Tracking &amp; Research" onclick="openConsultationModal(this, event)" title="Tender Research &amp; Tracking Consultation">
                 <span class="sat-step-tag">Research</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
               </div>
 
               <!-- Step 2: Evaluate -->
-              <div class="orbit-satellite sat-evaluate open-modal-btn" data-service="Tender Bidding &amp; Submission">
+              <div class="orbit-satellite sat-evaluate open-modal-btn" role="button" tabindex="0" data-service="Tender Bidding &amp; Submission" onclick="openConsultationModal(this, event)" title="Tender Evaluation Consultation">
                 <span class="sat-step-tag">Evaluate</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
               </div>
 
               <!-- Step 3: Prepare -->
-              <div class="orbit-satellite sat-prepare open-modal-btn" data-service="Tender Bidding &amp; Submission">
+              <div class="orbit-satellite sat-prepare open-modal-btn" role="button" tabindex="0" data-service="Tender Bidding &amp; Submission" onclick="openConsultationModal(this, event)" title="Bid Preparation Consultation">
                 <span class="sat-step-tag">Prepare</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
               </div>
 
               <!-- Step 4: Submit -->
-              <div class="orbit-satellite sat-submit open-modal-btn" data-service="GeM &amp; Procurement Support">
+              <div class="orbit-satellite sat-submit open-modal-btn" role="button" tabindex="0" data-service="GeM &amp; Procurement Support" onclick="openConsultationModal(this, event)" title="Portal Submission Consultation">
                 <span class="sat-step-tag">Submit</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
               </div>
 
               <!-- Step 5: Follow Up -->
-              <div class="orbit-satellite sat-followup open-modal-btn" data-service="Government Liaison &amp; Co-ordination Support">
+              <div class="orbit-satellite sat-followup open-modal-btn" role="button" tabindex="0" data-service="Government Liaison &amp; Co-ordination Support" onclick="openConsultationModal(this, event)" title="Liaison &amp; Follow-up Consultation">
                 <span class="sat-step-tag">Follow Up</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
               </div>

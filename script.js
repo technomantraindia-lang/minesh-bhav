@@ -1,3 +1,24 @@
+// Global handler to open Consultation / Enquiry Modal from any interactive circle without hyperlink navigation
+window.openConsultationModal = function(elem, event) {
+  if (event) {
+    if (typeof event.preventDefault === 'function') event.preventDefault();
+    if (typeof event.stopPropagation === 'function') event.stopPropagation();
+  }
+  const modalOverlay = document.getElementById('consultationModal');
+  if (modalOverlay) {
+    modalOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  let srv = 'Tender Bidding & Submission';
+  if (elem && elem.getAttribute) {
+    srv = elem.getAttribute('data-service') || srv;
+  }
+  const serviceSelect = document.getElementById('serviceRequired');
+  if (serviceSelect && srv) {
+    serviceSelect.value = srv;
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Hero Hotspot Badge Clicks
   const badgeHotspots = document.querySelectorAll('.badge-hotspot');

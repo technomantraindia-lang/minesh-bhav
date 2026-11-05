@@ -9820,9 +9820,29 @@ button {
   display: none !important;
 }
 
-/* Enable pointer events on individual interactive orbit circles */
+/* Enable pointer events and clickable cursor on all orbit circle elements */
+.orbit-center-core,
+.orbit-center-core *,
 .orbit-node,
-.orbit-satellite {
+.orbit-node *,
+.orbit-node-inner,
+.orbit-node-inner *,
+.orbit-satellite,
+.orbit-satellite *,
+.orbit-pill-label,
+.sat-step-tag {
   pointer-events: auto !important;
   cursor: pointer !important;
+}
+
+.orbit-node {
+  z-index: 12 !important;
+}
+
+.orbit-satellite {
+  z-index: 14 !important;
+}
+
+.orbit-center-core {
+  z-index: 16 !important;
 }
