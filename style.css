@@ -9820,15 +9820,44 @@ button {
   display: none !important;
 }
 
-/* Justified text alignment for all cards descriptions */
+/* Justified text alignment for all card descriptions across the entire website */
+.service-card p,
 .service-desc,
 .core-service-card p,
+.action-process-card p,
 .action-card-desc,
+.focus-ind-card p,
 .focus-ind-desc,
-.govt-segment-desc,
-.strength-desc,
+.industry-card-item p,
+.extra-ind-card p,
 .extra-ind-content p,
-.specialized-card p {
-  text-align: justify;
-  text-justify: inter-word;
+.govt-segment-card p,
+.govt-segment-desc,
+.govt-why-card p,
+.govt-why-desc,
+.strength-card p,
+.strength-desc,
+.sets-apart-card p,
+.sets-apart-desc,
+.why-matter-card p,
+.why-matter-desc,
+.commitment-card p,
+.founder-approach-card p,
+.founder-card p,
+.founder-card-box p,
+.cred-card p,
+.spec-card p,
+.specialized-card p,
+.pillar-card-desc,
+.spotlight-pillar-desc,
+.stage-showcase-desc,
+.segment-showcase-desc,
+.segment-interactive-card p,
+.segment-card-sub,
+[class*="card"] > p,
+[class*="-card"] > p,
+[class*="card"] .card-body p,
+[class*="card"] .card-content p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
 }
