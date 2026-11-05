@@ -1910,14 +1910,7 @@ button {
 }
 
 .industry-drawer-action {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.74rem;
-  font-weight: 700;
-  color: #f26522;
-  margin-top: 2px;
-  transition: gap 0.2s ease;
+  display: none !important;
 }
 
 .industry-drawer-action svg {
