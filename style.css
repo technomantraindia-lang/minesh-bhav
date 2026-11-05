@@ -442,7 +442,7 @@ button {
   min-height: calc(100vh - 65px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #f8fcff;
   background-image: 
     linear-gradient(90deg, rgba(248, 252, 255, 0.96) 0%, rgba(248, 252, 255, 0.84) 34%, rgba(248, 252, 255, 0) 48%),
@@ -9845,4 +9845,8 @@ button {
 
 .orbit-center-core {
   z-index: 16 !important;
+}
+
+.hero-bottom-bar {
+  display: none !important;
 }
