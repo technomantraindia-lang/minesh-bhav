@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Minesh Bhav Tender Management</title>
+    <meta name="description" content="Learn about our architectural surfaces curation, material-led sophistication, and comprehensive tender management solutions across India.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Inter:wght@300;400;500;600&family=Manrope:wght@200;300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Minesh Tendering Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#F4F0E9',
+                        plum: '#241923',
+                        champagne: '#B4A17A',
+                        stone: '#D0C5B7',
+                        taupe: '#A79A8B',
+                        charcoal: '#37332F'
+                    },
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                        cormorant: ['Cormorant Garamond', 'serif'],
+                        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Advanced Styles -->
+    <style>
+        /* Lenis Smooth Scrolling */
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+        .lenis.lenis-stopped { overflow: hidden; }
+        .lenis.lenis-scrolling iframe { pointer-events: none; }
+        
+        body {
+            background-color: #F4F0E9; /* Architectural Ivory */
+            color: #241923; /* Deep Plum */
+            overflow-x: hidden;
+        }
+
+        /* Strict 15px radius utility just in case */
+        .radius-strict {
+            border-radius: 15px !important;
+        }
+
+        /* Text Masking Wrappers */
+        .mask-wrap {
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        /* Parallax & Image Handling */
+        .parallax-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+        .parallax-img {
+            height: 140%;
+            width: 100%;
+            object-fit: cover;
+            will-change: transform;
+        }
+
+        /* Custom Selection */
+        ::selection {
+            background: #B4A17A;
+            color: #F4F0E9;
+        }
+
+        /* Subtle borders for light theme */
+        .border-light {
+            border: 1px solid rgba(36, 25, 35, 0.1);
+        }
+
+        /* Ensure header sits securely above all sections */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Ensure modal overlay sits on top */
+        .modal-overlay {
+            z-index: 2000;
+        }
+    </style>
+</head>
+<body class="font-inter antialiased selection:bg-champagne selection:text-ivory">
+
+  <!-- =========================================================================
+       1. TOP HEADER NAVIGATION (FROM HOME PAGE)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="header-logo" aria-label="Minesh Bhav Homepage">
+        <img src="assets/logo.png" alt="Minesh Bhav Tender Bidding &amp; E-Procurement Specialist" width="973" height="289" fetchpriority="high">
+      </a>
+
+      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about-us.html" class="nav-link active">About Us</a></li>
+          <li><a href="about-founder.html" class="nav-link">About Founder</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="industries.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              <span>Industries</span>
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="industries.html" class="dropdown-item">Focus Industries</a></li>
+              <li><a href="govt-segments.html" class="dropdown-item">Govt Segments</a></li>
+            </ul>
+          </li>
+          <li><a href="core-strengths.html" class="nav-link">Core Strengths</a></li>
+          <li><a href="client-credentials.html" class="nav-link">Clients &amp; Credentials</a></li>
+          <li><a href="enquiry.html" class="nav-link">Enquiry</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta" style="display: flex; align-items: center;">
+        <a href="tel:+919876543210" class="header-phone-link" aria-label="Call +91 98765 43210">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>+91 98765 43210</span>
+        </a>
+
+        <a href="#consultation-modal" class="btn btn-primary open-modal-btn">
+          Get a Free Consultation
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="relative min-h-[90vh] w-full pt-36 pb-16 px-6 md:px-12 flex flex-col justify-center">
+        <div class="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <!-- Typography Left -->
+            <div class="w-full lg:w-1/2 z-10">
+                <div class="text-champagne font-inter text-sm uppercase tracking-[0.4em] mb-8 overflow-hidden">
+                    <span class="block gs-hero-text translate-y-[110%]">About Us</span>
+                </div>
+                <h1 class="font-manrope font-light text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight text-plum flex flex-col">
+                    <div class="mask-wrap"><span class="block gs-hero-text translate-y-[110%]">SPACES</span></div>
+                    <div class="mask-wrap"><span class="block gs-hero-text translate-y-[110%]">SHAPED</span></div>
+                    <div class="mask-wrap"><span class="block text-champagne gs-hero-text translate-y-[110%] italic font-cormorant">by possibility.</span></div>
+                </h1>
+                <div class="mt-12 mask-wrap max-w-md">
+                    <p class="font-inter text-charcoal/80 text-base font-light leading-relaxed gs-hero-text translate-y-[110%]">
+                        We are an architectural surfaces curator dedicated to material-led sophistication, providing tactile, grounded solutions for elevated interiors.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Offset Parallax Image Right -->
+            <div class="w-full lg:w-1/2 flex justify-end gs-fade-up">
+                <div class="w-full max-w-md h-[500px] md:h-[650px] rounded-[15px] parallax-wrapper shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=1200" alt="Modern Architecture Exterior" class="parallax-img absolute top-[-15%] gs-parallax" data-speed="0.8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Our Story (Split Screen) -->
+    <section class="py-24 px-6 md:px-12 bg-stone relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+            
+            <!-- Overlapping Images Left -->
+            <div class="w-full md:w-1/2 relative h-[500px] md:h-[600px] gs-fade-up">
+                <div class="absolute top-0 left-0 w-2/3 h-3/4 rounded-[15px] overflow-hidden parallax-wrapper shadow-lg z-10">
+                    <img src="https://images.unsplash.com/photo-1541123437800-1bb1317bc20f?auto=format&fit=crop&q=80" class="parallax-img absolute top-[-10%] gs-parallax" data-speed="0.9" alt="Interior Space">
+                </div>
+                <div class="absolute bottom-0 right-0 w-3/5 h-2/3 rounded-[15px] overflow-hidden parallax-wrapper shadow-2xl z-20">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80" class="parallax-img absolute top-[-15%] gs-parallax" data-speed="1.1" alt="Material Detail">
+                </div>
+            </div>
+
+            <!-- Text Content Right -->
+            <div class="w-full md:w-1/2 flex flex-col gap-8 gs-fade-up pl-0 lg:pl-12">
+                <span class="text-xs font-inter uppercase tracking-[0.2em] text-plum/50 border-l border-plum/30 pl-4 block">Our Origin</span>
+                <h2 class="font-manrope text-3xl md:text-5xl text-plum font-light leading-tight">
+                    Considered origins, <br>
+                    <span class="text-champagne italic font-cormorant">enduring impact.</span>
+                </h2>
+                <div class="font-inter text-charcoal/80 text-sm font-light space-y-6 leading-relaxed">
+                    <p>
+                        The Deco House emerged from a fundamental desire to simplify the specification process for architects and designers. We observed a chaotic marketplace and responded by creating a curated sanctuary of materials.
+                    </p>
+                    <p>
+                        Every stone, veneer, and acoustic panel in our collection is rigorously evaluated not just for its immediate aesthetic appeal, but for how it responds to light, daily use, and the passage of time.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. The Material Archive (Asymmetrical Editorial Grid) -->
+    <section class="py-32 px-6 md:px-12 bg-ivory">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-16 gs-fade-up border-b border-plum/10 pb-6">
+                <h2 class="font-manrope text-4xl md:text-5xl text-plum font-light">The Material Archive</h2>
+                <span class="text-xs font-inter uppercase tracking-[0.2em] text-plum/50 hidden md:block">Curated &amp; Refined</span>
+            </div>
+
+            <!-- Unique CSS Grid mimicking reference image -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-auto">
+                
+                <!-- Row 1 -->
+                <!-- Wide Stone Card -->
+                <div class="md:col-span-6 lg:col-span-5 bg-stone rounded-[15px] p-8 md:p-12 flex flex-col justify-between min-h-[300px] gs-fade-up">
+                    <div class="flex justify-between items-start mb-12">
+                        <span class="font-manrope text-2xl text-plum/30">01</span>
+                        <span class="w-8 h-8 rounded-full border border-plum/20 flex items-center justify-center text-plum/40">&plus;</span>
+                    </div>
+                    <div>
+                        <h3 class="font-manrope text-2xl text-plum font-light mb-3">Architectural Wood</h3>
+                        <p class="font-inter text-xs text-charcoal/70 uppercase tracking-widest">Mikasa / Alpi / Greenlam</p>
+                    </div>
+                </div>
+
+                <!-- Dark Plum Accent Card -->
+                <div class="md:col-span-6 lg:col-span-7 bg-plum rounded-[15px] p-8 md:p-12 flex flex-col justify-between min-h-[300px] text-ivory gs-fade-up" style="transition-delay: 100ms;">
+                    <div class="flex justify-end mb-12">
+                        <span class="font-inter text-[0.65rem] uppercase tracking-widest text-champagne border border-champagne/30 px-3 py-1 rounded-[15px]">Premium Veneers</span>
+                    </div>
+                    <div>
+                        <p class="font-cormorant italic text-3xl md:text-4xl text-champagne mb-4">"Tactility grounded in texture."</p>
+                        <p class="font-inter text-sm text-ivory/60 font-light">Flawless grain matching and zero defects.</p>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <!-- Small Ivory Offset Card -->
+                <div class="md:col-span-4 lg:col-span-3 lg:col-start-2 bg-white border border-plum/5 rounded-[15px] p-8 flex flex-col justify-center min-h-[250px] shadow-sm gs-fade-up">
+                    <h4 class="font-manrope text-xl text-plum font-light mb-2">Sustainable Core</h4>
+                    <p class="font-inter text-xs text-charcoal/60 leading-relaxed">FSC-certified materials prioritizing ecological health and longevity.</p>
+                </div>
+
+                <!-- Wide Taupe Card -->
+                <div class="md:col-span-8 lg:col-span-6 bg-taupe rounded-[15px] p-8 md:p-12 flex flex-col justify-between min-h-[250px] text-ivory gs-fade-up" style="transition-delay: 100ms;">
+                    <span class="font-manrope text-2xl text-ivory/30 mb-8">02</span>
+                    <div>
+                        <h3 class="font-manrope text-2xl text-ivory font-light mb-3">Solid Surfaces</h3>
+                        <p class="font-inter text-xs text-ivory/70 uppercase tracking-widest">Stone / Fenix NTM / Solidwood</p>
+                    </div>
+                </div>
+
+                <!-- Row 3: Visual Break -->
+                <!-- Parallax Image Grid Item -->
+                <div class="md:col-span-5 lg:col-span-4 h-[350px] rounded-[15px] overflow-hidden parallax-wrapper gs-fade-up mt-8">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80" class="parallax-img absolute top-[-10%] gs-parallax" data-speed="0.8" alt="Material Texture">
+                </div>
+                
+                <div class="md:col-span-7 lg:col-span-6 lg:col-start-6 flex flex-col justify-center px-0 md:px-12 gs-fade-up mt-8">
+                    <h3 class="font-manrope text-3xl md:text-4xl text-plum font-light mb-6">The details that define a space.</h3>
+                    <p class="font-inter text-charcoal/70 text-sm leading-relaxed max-w-md">
+                        A curated material experience, supported by deep product knowledge, dependable guidance, and a cohesive design point of view for discerning specifiers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Craftsmanship & Curation (Gallery Grid) -->
+    <section class="py-24 px-6 md:px-12 bg-ivory">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="rounded-[15px] overflow-hidden h-[400px] parallax-wrapper gs-fade-up shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80" class="w-full h-full object-cover parallax-img gs-parallax" data-speed="0.9" alt="Wood Grain">
+                </div>
+                <!-- Image 2 -->
+                <div class="rounded-[15px] overflow-hidden h-[400px] parallax-wrapper gs-fade-up shadow-sm lg:mt-12" style="transition-delay: 100ms;">
+                    <img src="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&q=80" class="w-full h-full object-cover parallax-img gs-parallax" data-speed="1.1" alt="Stone Texture">
+                </div>
+                <!-- Image 3 -->
+                <div class="rounded-[15px] overflow-hidden h-[400px] parallax-wrapper gs-fade-up shadow-sm md:col-span-2 lg:col-span-1 lg:mt-24" style="transition-delay: 200ms;">
+                    <img src="https://images.unsplash.com/photo-1617325247661-675ab03407b3?auto=format&fit=crop&q=80" class="w-full h-full object-cover parallax-img gs-parallax" data-speed="0.8" alt="Matte Finish">
+                </div>
+            </div>
+            
+            <!-- Partner Marquee (Subtle Light Version) -->
+            <div class="mt-24 border-y border-plum/10 py-6 overflow-hidden flex relative bg-stone/30">
+                <div class="flex animate-[marquee_30s_linear_infinite] whitespace-nowrap items-center font-inter text-[0.65rem] uppercase tracking-[0.3em] text-plum/40 min-w-max">
+                    <span class="mx-8">Mikasa</span> &bull;
+                    <span class="mx-8">Greenlam</span> &bull;
+                    <span class="mx-8">Fenix</span> &bull;
+                    <span class="mx-8">Valchromat</span> &bull;
+                    <span class="mx-8">Alpi</span> &bull;
+                    <span class="mx-8">Rehau</span> &bull;
+                    <span class="mx-8">Sibu</span> &bull;
+                </div>
+                <div class="flex animate-[marquee_30s_linear_infinite] whitespace-nowrap items-center font-inter text-[0.65rem] uppercase tracking-[0.3em] text-plum/40 min-w-max absolute top-6 left-full">
+                    <span class="mx-8">Mikasa</span> &bull;
+                    <span class="mx-8">Greenlam</span> &bull;
+                    <span class="mx-8">Fenix</span> &bull;
+                    <span class="mx-8">Valchromat</span> &bull;
+                    <span class="mx-8">Alpi</span> &bull;
+                    <span class="mx-8">Rehau</span> &bull;
+                    <span class="mx-8">Sibu</span> &bull;
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. The Showroom Experience -->
+    <section class="py-32 px-6 md:px-12 bg-ivory relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="w-full h-[80vh] min-h-[600px] parallax-wrapper rounded-[15px] overflow-hidden relative gs-fade-up shadow-xl">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=100&w=2000" alt="Showroom Interior" class="parallax-img absolute top-[-15%] gs-parallax" data-speed="0.7">
+                
+                <!-- Floating Info Card -->
+                <div class="absolute bottom-8 right-8 md:bottom-16 md:right-16 bg-ivory/95 backdrop-blur-md p-8 md:p-12 rounded-[15px] max-w-sm shadow-2xl border border-plum/10 gs-fade-up text-left">
+                    <span class="text-xs font-inter uppercase tracking-[0.2em] text-champagne mb-4 block">The Experience</span>
+                    <h3 class="font-manrope text-3xl text-plum font-light mb-4">A tactile destination.</h3>
+                    <p class="font-inter text-charcoal/70 text-sm font-light mb-8">
+                        Experience the true scale, weight, and light response of our collections in a space designed around architectural restraint.
+                    </p>
+                    <a href="#consultationModal" class="text-xs uppercase tracking-widest text-plum border-b border-plum pb-1 hover:text-champagne hover:border-champagne transition-colors open-modal-btn">Book a Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5.1 Cinematic Video Banner -->
+    <section class="py-24 px-6 md:px-12 bg-ivory relative z-10">
+        <div class="max-w-7xl mx-auto h-[60vh] md:h-[75vh] rounded-[15px] overflow-hidden relative parallax-wrapper shadow-2xl group cursor-pointer gs-fade-up">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=100&w=2000" alt="Cinematic Video Thumbnail" class="parallax-img absolute top-[-20%] gs-parallax transition-transform duration-1000 group-hover:scale-105" data-speed="0.8">
+            <div class="absolute inset-0 bg-plum/30 transition-colors duration-500 group-hover:bg-plum/40 backdrop-blur-[2px]"></div>
+            
+            <!-- Play Button Overlay -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <div class="w-24 h-24 rounded-full bg-ivory/20 backdrop-blur-md border border-ivory/50 flex items-center justify-center text-ivory mb-6 transition-transform duration-500 group-hover:scale-110 group-hover:bg-champagne/90 group-hover:border-champagne">
+                    <svg class="w-8 h-8 ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+                <h3 class="font-manrope text-3xl text-ivory font-light tracking-wide">The Making of Restraint</h3>
+                <p class="font-inter text-xs text-ivory/70 uppercase tracking-[0.2em] mt-3">Watch the Film</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5.2 Global Sourcing (Asymmetrical Grid) -->
+    <section class="py-32 px-6 md:px-12 bg-stone relative z-10 border-t border-plum/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gs-fade-up gap-8">
+                <div>
+                    <span class="text-xs font-inter uppercase tracking-[0.2em] text-plum/50 mb-4 block">Global Procurement</span>
+                    <h2 class="font-manrope text-4xl md:text-5xl text-plum font-light leading-tight">Curated from <br>the source.</h2>
+                </div>
+                <p class="font-inter text-charcoal/70 text-sm max-w-sm font-light">
+                    Our materials trace distinct geographies. We partner with specialized mills and quarries globally to ensure unmatched quality and authentic origin.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 auto-rows-[300px]">
+                
+                <!-- Portugal Card -->
+                <div class="lg:col-span-7 bg-ivory rounded-[15px] p-8 md:p-12 flex flex-col justify-between gs-fade-up relative overflow-hidden shadow-sm">
+                    <div class="absolute top-0 right-0 w-1/2 h-full parallax-wrapper hidden md:block">
+                        <img src="https://images.unsplash.com/photo-1596414902409-cf8021c1f76e?auto=format&fit=crop&q=80" alt="Portugal Origin" class="w-full h-full object-cover opacity-30 mix-blend-multiply">
+                    </div>
+                    <div class="relative z-10 flex flex-col h-full justify-between w-full md:w-3/5">
+                        <span class="font-manrope text-xl text-plum/40 block mb-6">01 / Portugal</span>
+                        <div>
+                            <h3 class="font-manrope text-3xl text-plum font-light mb-4">Valchromat Origins</h3>
+                            <p class="font-inter text-sm text-charcoal/70 mb-6">Engineered wood fiber panels infused with organic dyes, sourced directly from specialized Portuguese manufacturers prioritizing sustainable forestry.</p>
+                            <a href="#consultationModal" class="text-xs uppercase tracking-widest text-champagne hover:text-plum transition-colors border-b border-champagne/50 pb-1 open-modal-btn">Explore Range</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vertical Detail Image -->
+                <div class="lg:col-span-5 rounded-[15px] overflow-hidden parallax-wrapper gs-fade-up shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&q=80" class="parallax-img absolute top-[-10%] gs-parallax" data-speed="0.9" alt="Material Stack">
+                </div>
+
+                <!-- Austria Card -->
+                <div class="lg:col-span-4 rounded-[15px] overflow-hidden parallax-wrapper gs-fade-up shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1c24240f57?auto=format&fit=crop&q=80" class="parallax-img absolute top-[-10%] gs-parallax" data-speed="1.1" alt="Austria Origin">
+                    <div class="absolute inset-0 bg-gradient-to-t from-plum/80 to-transparent"></div>
+                    <div class="absolute bottom-8 left-8 right-8 text-ivory">
+                        <span class="font-manrope text-lg text-champagne block mb-2">02 / Austria</span>
+                        <h3 class="font-manrope text-2xl font-light mb-2">Sibu Design</h3>
+                        <p class="font-inter text-xs text-ivory/70">Precision decorative panels.</p>
+                    </div>
+                </div>
+
+                <!-- Concept Card -->
+                <div class="lg:col-span-8 bg-plum rounded-[15px] p-8 md:p-12 flex flex-col justify-center text-ivory gs-fade-up shadow-sm" style="transition-delay: 100ms;">
+                    <h3 class="font-cormorant italic text-3xl md:text-4xl text-champagne mb-6">"An unbroken chain of quality."</h3>
+                    <p class="font-inter text-sm text-ivory/60 font-light max-w-lg leading-relaxed">
+                        From the dense forests of Austria to the innovative pressing facilities in Italy (Fenix), we eliminate the intermediaries. This rigorous sourcing model guarantees that the materials shaping your spaces perform to the highest architectural standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Our Heritage Timeline -->
+    <section class="py-32 px-6 md:px-12 bg-stone relative timeline-section overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-24 gs-fade-up relative z-10">
+                <h2 class="font-manrope text-4xl md:text-5xl text-plum font-light mb-4">Evolution of Restraint</h2>
+                <p class="font-inter text-charcoal/70 text-sm max-w-md mx-auto">A timeline of our commitment to material excellence.</p>
+            </div>
+
+            <!-- Vertical Timeline Container -->
+            <div class="relative w-full">
+                <!-- Static Background Line -->
+                <div class="absolute left-6 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[1px] bg-plum/10"></div>
+                
+                <!-- Dynamic Progress Line (GSAP Target) -->
+                <div class="tl-line-progress absolute left-6 md:left-1/2 md:-translate-x-1/2 top-0 w-[2px] bg-champagne origin-top h-0 z-0"></div>
+                
+                <!-- Item 1 (Left) -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-24 z-10">
+                    <div class="tl-node flex items-center justify-center w-12 h-12 rounded-[15px] border-2 border-plum/10 bg-ivory text-plum/50 absolute left-0 md:left-1/2 md:-translate-x-1/2 shadow-sm font-manrope text-sm transition-colors duration-500 z-20">
+                        '15
+                    </div>
+                    <div class="tl-content-left w-[calc(100%-4rem)] md:w-[calc(50%-4rem)] pl-16 md:pl-0 md:pr-16 text-left md:text-right flex flex-col md:items-end">
+                        <div class="bg-ivory/60 rounded-[15px] p-6 md:p-8 backdrop-blur-md border border-plum/5 shadow-sm group-hover:shadow-lg transition-all duration-500 w-full max-w-md cursor-pointer">
+                            <h4 class="font-manrope text-2xl text-plum mb-3">Foundation</h4>
+                            <p class="font-inter text-sm text-charcoal/70 mb-6">Established in response to a need for a curated, premium materials destination for architects.</p>
+                            <div class="w-full h-48 rounded-[15px] overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80" alt="Foundation" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-plum/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 (Right) -->
+                <div class="relative flex items-center justify-between md:justify-normal group mb-24 z-10">
+                    <div class="tl-node flex items-center justify-center w-12 h-12 rounded-[15px] border-2 border-plum/10 bg-ivory text-plum/50 absolute left-0 md:left-1/2 md:-translate-x-1/2 shadow-sm font-manrope text-sm transition-colors duration-500 z-20">
+                        '19
+                    </div>
+                    <div class="tl-content-right w-[calc(100%-4rem)] md:w-[calc(50%-4rem)] pl-16 md:pl-16 text-left">
+                        <div class="bg-ivory/60 rounded-[15px] p-6 md:p-8 backdrop-blur-md border border-plum/5 shadow-sm group-hover:shadow-lg transition-all duration-500 w-full max-w-md cursor-pointer">
+                            <h4 class="font-manrope text-2xl text-plum mb-3">European Expansion</h4>
+                            <p class="font-inter text-sm text-charcoal/70 mb-6">Secured exclusive partnerships with Fenix and Valchromat, bringing advanced surfacing technologies to our market.</p>
+                            <div class="w-full h-48 rounded-[15px] overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&q=80" alt="European Expansion" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-plum/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 (Left) -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-24 z-10">
+                    <div class="tl-node flex items-center justify-center w-12 h-12 rounded-[15px] border-2 border-plum/10 bg-ivory text-plum/50 absolute left-0 md:left-1/2 md:-translate-x-1/2 shadow-sm font-manrope text-sm transition-colors duration-500 z-20">
+                        '22
+                    </div>
+                    <div class="tl-content-left w-[calc(100%-4rem)] md:w-[calc(50%-4rem)] pl-16 md:pl-0 md:pr-16 text-left md:text-right flex flex-col md:items-end">
+                        <div class="bg-ivory/60 rounded-[15px] p-6 md:p-8 backdrop-blur-md border border-plum/5 shadow-sm group-hover:shadow-lg transition-all duration-500 w-full max-w-md cursor-pointer">
+                            <h4 class="font-manrope text-2xl text-plum mb-3">Acoustic Division</h4>
+                            <p class="font-inter text-sm text-charcoal/70 mb-6">Launched the Senses Akustik line, blending high-end wood aesthetics with rigorous sound performance standards.</p>
+                            <div class="w-full h-48 rounded-[15px] overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1510074218659-3faeb5ee8db0?auto=format&fit=crop&q=80" alt="Acoustic Division" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-plum/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 (Right) -->
+                <div class="relative flex items-center justify-between md:justify-normal group mb-12 z-10">
+                    <div class="tl-node flex items-center justify-center w-12 h-12 rounded-[15px] border-2 border-plum/10 bg-ivory text-plum/50 absolute left-0 md:left-1/2 md:-translate-x-1/2 shadow-sm font-manrope text-sm transition-colors duration-500 z-20">
+                        '26
+                    </div>
+                    <div class="tl-content-right w-[calc(100%-4rem)] md:w-[calc(50%-4rem)] pl-16 md:pl-16 text-left">
+                        <div class="bg-ivory/60 rounded-[15px] p-6 md:p-8 backdrop-blur-md border border-plum/5 shadow-sm group-hover:shadow-lg transition-all duration-500 w-full max-w-md cursor-pointer">
+                            <h4 class="font-manrope text-2xl text-plum mb-3">The Deco House</h4>
+                            <p class="font-inter text-sm text-charcoal/70 mb-6">A complete brand elevation, cementing our position as the ultimate design destination for discerning material specifiers.</p>
+                            <div class="w-full h-48 rounded-[15px] overflow-hidden relative">
+                                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80" alt="The Deco House" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-plum/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Call to Action Banner -->
+    <section class="bg-plum pt-24 pb-20 px-6 md:px-12 text-ivory relative z-20">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center gs-fade-up">
+            <h2 class="font-manrope text-4xl md:text-6xl lg:text-7xl font-light mb-6">
+                "The details that<br><span class="text-champagne italic font-cormorant">define a space."</span>
+            </h2>
+            <p class="font-inter text-ivory/60 text-sm max-w-md mx-auto mb-12 font-light">
+                Discover a carefully curated selection of architectural surfaces. We supply solutions built on architectural restraint and tactile beauty.
+            </p>
+            <div class="bg-charcoal/40 p-8 md:p-12 rounded-[15px] border border-champagne/20 w-full max-w-2xl relative overflow-hidden group">
+                <!-- Hover effect background -->
+                <div class="absolute inset-0 bg-champagne/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+                
+                <h3 class="font-manrope text-2xl md:text-3xl font-light mb-4 relative z-10">Begin your material journey.</h3>
+                <p class="font-inter text-xs text-ivory/50 uppercase tracking-widest mb-8 relative z-10">Request a physical sample box or technical consultation.</p>
+                <button type="button" class="px-8 py-4 rounded-[15px] bg-champagne text-plum font-inter text-xs uppercase tracking-widest hover:bg-ivory transition-colors duration-300 relative z-10 open-modal-btn">
+                    Get in Touch
+                </button>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       8. SITE FOOTER (FROM HOME PAGE)
+       ========================================================================= -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-link" aria-label="Minesh Bhav Tender Management Homepage">
+            <img src="assets/logo.png" alt="Minesh Bhav Logo" class="footer-logo" width="973" height="289" loading="lazy">
+          </a>
+          <p class="footer-brand-desc">
+            Professional tender bidding, tracking, documentation, government liaison, and e-procurement consultancy led by Minesh Bhav across India.
+          </p>
+          <div class="footer-badges-wrap">
+            <span class="footer-badge-pill">✓ GeM &amp; CPPP Specialist</span>
+            <span class="footer-badge-pill">✓ GFR 2017 Compliant</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Links (Duo Columns) -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <div class="footer-links-duo">
+            <ul class="footer-links-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html" style="color: var(--primary-orange); font-weight: 700;">About Us</a></li>
+              <li><a href="about-founder.html">About Founder</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="govt-segments.html">Govt Segments</a></li>
+            </ul>
+            <ul class="footer-links-list">
+              <li><a href="industries.html">Industries</a></li>
+              <li><a href="core-strengths.html">Core Strengths</a></li>
+              <li><a href="client-credentials.html">Clients &amp; Credentials</a></li>
+              <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Col 3: Contact Info -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </span>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li class="footer-contact-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              <a href="mailto:info@mineshtendering.com">info@mineshtendering.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              <span>Pan India</span>
+            </li>
+            <li class="footer-contact-item">
+              <span class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </span>
+              <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Follow Us -->
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Follow Us</h4>
+          <div class="footer-social-row">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.762-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.77.838 2.791.838 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.828c0 5.514-4.486 10-10 10-1.741 0-3.376-.447-4.805-1.23l-5.195 1.36 1.385-5.061c-.868-1.487-1.385-3.227-1.385-5.069 0-5.514 4.486-10 10-10s10 4.486 10 10z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright Row -->
+    <div class="footer-copyright-bar">
+      <div class="container">
+        <div class="copyright-content">
+          <p>© 2026 Minesh Tendering. All Rights Reserved.</p>
+          <div class="copyright-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       9. INTERACTIVE CONSULTATION MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header">
+        <h3 id="modalTitle">Request a Free Consultation</h3>
+        <p>Get in touch with Minesh Bhav for expert tender management &amp; e-procurement guidance.</p>
+      </div>
+
+      <form id="consultationForm">
+        <div class="form-group">
+          <label class="form-label" for="fullName">Full Name *</label>
+          <input type="text" id="fullName" class="form-input" placeholder="e.g. Rajesh Sharma" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="companyName">Company Name *</label>
+          <input type="text" id="companyName" class="form-input" placeholder="e.g. Apex Industrial Solutions" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="mobileNumber">Mobile Number *</label>
+          <input type="tel" id="mobileNumber" class="form-input" placeholder="e.g. +91 98765 43210" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="emailAddress">Email Address *</label>
+          <input type="email" id="emailAddress" class="form-input" placeholder="e.g. rajesh@apexindustry.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="serviceRequired">Service Required *</label>
+          <select id="serviceRequired" class="form-select" required>
+            <option value="" disabled selected>Select service category</option>
+            <option value="Tender Bidding &amp; Submission">1. Tender Bidding &amp; Submission</option>
+            <option value="Tender Tracking &amp; Research">2. Tender Tracking &amp; Research</option>
+            <option value="Government Liaison &amp; Co-ordination Support">3. Government Liaison &amp; Co-ordination Support</option>
+            <option value="GeM &amp; Procurement Support">4. GeM &amp; Procurement Support</option>
+            <option value="Post-Bid &amp; Contract Support">5. Post-Bid &amp; Contract Support</option>
+            <option value="Tender Process Training">6. Tender Process Training</option>
+            <option value="Other Consultancy">7. Other Consultancy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="tenderDetails">Product / Tender Number (Optional)</label>
+          <textarea id="tenderDetails" class="form-textarea" placeholder="Describe your product, service, or ongoing tender reference..."></textarea>
+        </div>
+
+        <div class="modal-btn-row">
+          <button type="submit" class="btn btn-primary" style="flex: 1;">
+            Submit Enquiry
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          <button type="button" class="btn btn-outline" id="chatWhatsAppBtn">
+            WhatsApp Direct
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Quick Button -->
+  <a href="https://wa.me/919876543210?text=Hello!%20I%20am%20interested%20in%20Minesh%20Tendering%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.77.838 2.791.838 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.828c0 5.514-4.486 10-10 10-1.741 0-3.376-.447-4.805-1.23l-5.195 1.36 1.385-5.061c-.868-1.487-1.385-3.227-1.385-5.069 0-5.514 4.486-10 10-10s10 4.486 10 10z"/>
+    </svg>
+  </a>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toastMsg">Thank you! Your enquiry has been received. Minesh Bhav will contact you shortly.</div>
+
+  <!-- Minesh Tendering Site Script -->
+  <script src="script.js"></script>
+
+    <!-- GSAP & Lenis Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Initialize Lenis (Smooth Scrolling)
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                direction: 'vertical',
+                gestureDirection: 'vertical',
+                smooth: true,
+                mouseMultiplier: 0.8, 
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+
+            // Sync GSAP ScrollTrigger with Lenis
+            gsap.registerPlugin(ScrollTrigger);
+            lenis.on('scroll', ScrollTrigger.update);
+            gsap.ticker.add((time) => { lenis.raf(time * 1000) });
+            gsap.ticker.lagSmoothing(0);
+
+            // 2. Entrance Animations
+            // Hero Text Stagger
+            gsap.to('.gs-hero-text', {
+                y: 0, 
+                duration: 1.2, 
+                stagger: 0.1, 
+                ease: 'power4.out', 
+                delay: 0.4 
+            });
+
+            // 3. Scroll Interactions
+            
+            // Parallax Images
+            gsap.utils.toArray('.gs-parallax').forEach(img => {
+                const speed = img.getAttribute('data-speed') || 1;
+                gsap.to(img, {
+                    yPercent: 15 * speed,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: img.parentElement,
+                        start: 'top bottom',
+                        end: 'bottom top',
+                        scrub: true
+                    }
+                });
+            });
+
+            // Staggered Fade Ups for Cards and Sections
+            gsap.utils.toArray('.gs-fade-up').forEach(element => {
+                gsap.fromTo(element, 
+                    { y: 50, opacity: 0 },
+                    {
+                        y: 0, opacity: 1, duration: 1.2, ease: 'power3.out',
+                        scrollTrigger: {
+                            trigger: element,
+                            start: 'top 85%',
+                            toggleActions: 'play none none reverse'
+                        }
+                    }
+                );
+            });
+            
+            // 4. Dynamic Timeline Animations
+            
+            // Draw central line
+            gsap.to('.tl-line-progress', {
+                height: '100%',
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '.timeline-section',
+                    start: 'top 50%',
+                    end: 'bottom 80%',
+                    scrub: 0.5
+                }
+            });
+
+            // Animate Nodes & Content
+            gsap.utils.toArray('.tl-node').forEach((node, i) => {
+                const isLeft = i % 2 === 0; 
+                let contentClass = isLeft ? '.tl-content-left' : '.tl-content-right';
+                const content = node.parentElement.querySelector(contentClass);
+                
+                // Animate Node Scale & Color
+                gsap.fromTo(node, 
+                    { scale: 0.5, borderColor: 'rgba(36,25,35,0.1)', color: 'rgba(36,25,35,0.5)' },
+                    {
+                        scale: 1, 
+                        borderColor: '#B4A17A',
+                        color: '#B4A17A',
+                        duration: 0.5,
+                        ease: 'back.out(1.7)',
+                        scrollTrigger: {
+                            trigger: node,
+                            start: 'top 75%',
+                            toggleActions: 'play none none reverse'
+                        }
+                    }
+                );
+
+                // Slide In Content Cards
+                if (content) {
+                    gsap.fromTo(content,
+                        { x: isLeft ? -50 : 50, opacity: 0 },
+                        {
+                            x: 0, 
+                            opacity: 1,
+                            duration: 0.8,
+                            ease: 'power3.out',
+                            delay: 0.2,
+                            scrollTrigger: {
+                                trigger: node,
+                                start: 'top 80%',
+                                toggleActions: 'play none none reverse'
+                            }
+                        }
+                    );
+                }
+            });
+            
+            // Global custom marquee animation style injection
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @keyframes marquee {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-100%); }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>

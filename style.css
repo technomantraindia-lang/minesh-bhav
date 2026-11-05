@@ -6242,6 +6242,20 @@ button {
   gap: 28px;
 }
 
+@media (min-width: 1025px) {
+  .core-services-grid > .core-service-card:nth-child(7):last-child,
+  .services-grid > .service-card:nth-child(7):last-child {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1024px) {
+  .core-services-grid > .core-service-card:nth-child(7):last-child,
+  .services-grid > .service-card:nth-child(7):last-child {
+    grid-column: span 2;
+  }
+}
+
 .core-service-card {
   position: relative;
   background: #ffffff;
