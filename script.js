@@ -348,6 +348,28 @@ document.addEventListener('DOMContentLoaded', () => {
     updateSlider();
   }
 
+  // Orbit Animation Interactive Click Handling -> Open Consultation Modal Form
+  const orbitContainer = document.querySelector('.orbit-system-container');
+  if (orbitContainer) {
+    const orbitCircles = orbitContainer.querySelectorAll('.orbit-center-core, .orbit-node, .orbit-satellite');
+    orbitCircles.forEach(circle => {
+      circle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const srv = circle.getAttribute('data-service') || 'Tender Bidding & Submission';
+        const modalOverlay = document.getElementById('consultationModal');
+        if (modalOverlay) {
+          modalOverlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+        const serviceSelect = document.getElementById('serviceRequired');
+        if (serviceSelect && srv) {
+          serviceSelect.value = srv;
+        }
+      });
+    });
+  }
+
   // 4. Consultation Modal Logic
   const modalOverlay = document.getElementById('consultationModal');
   const modalCloseBtn = document.getElementById('modalCloseBtn');

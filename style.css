@@ -701,6 +701,15 @@ button {
   padding: 10px 12px;
   animation: centerPulse 3.5s ease-in-out infinite alternate;
   text-align: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orbit-center-core:hover {
+  transform: scale(1.08);
+  border-color: #f26522;
+  box-shadow: 0 0 0 8px rgba(242, 101, 34, 0.22), 0 16px 36px rgba(15, 36, 64, 0.25);
 }
 
 .orbit-center-core img {
@@ -749,6 +758,7 @@ button {
   border: 1.5px dashed rgba(2, 132, 199, 0.38);
   animation: rotateOrbit 36s linear infinite;
   transform-origin: center center;
+  pointer-events: none;
 }
 
 .orbit-ring-inner {
@@ -759,6 +769,7 @@ button {
   border: 1.5px dashed rgba(242, 101, 34, 0.35);
   animation: rotateOrbitReverse 26s linear infinite;
   transform-origin: center center;
+  pointer-events: none;
 }
 
 .orbit-system-container:hover .orbit-ring-outer,
@@ -9807,4 +9818,11 @@ button {
 .step-num-badge,
 .segment-index-tag {
   display: none !important;
+}
+
+/* Enable pointer events on individual interactive orbit circles */
+.orbit-node,
+.orbit-satellite {
+  pointer-events: auto !important;
+  cursor: pointer !important;
 }
