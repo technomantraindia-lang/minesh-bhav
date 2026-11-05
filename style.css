@@ -3086,7 +3086,7 @@ button {
 
 .segment-card-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 14px;
 }
@@ -9801,3 +9801,10 @@ button {
 }
 
 
+
+/* Hide step number bubbles, badges, and SEG tags per design specification */
+.step-num-bubble,
+.step-num-badge,
+.segment-index-tag {
+  display: none !important;
+}
