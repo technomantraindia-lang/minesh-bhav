@@ -1,24 +1,3 @@
-// Global handler to open Consultation / Enquiry Modal from any interactive circle without hyperlink navigation
-window.openConsultationModal = function(elem, event) {
-  if (event) {
-    if (typeof event.preventDefault === 'function') event.preventDefault();
-    if (typeof event.stopPropagation === 'function') event.stopPropagation();
-  }
-  const modalOverlay = document.getElementById('consultationModal');
-  if (modalOverlay) {
-    modalOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  let srv = 'Tender Bidding & Submission';
-  if (elem && elem.getAttribute) {
-    srv = elem.getAttribute('data-service') || srv;
-  }
-  const serviceSelect = document.getElementById('serviceRequired');
-  if (serviceSelect && srv) {
-    serviceSelect.value = srv;
-  }
-};
-
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Hero Hotspot Badge Clicks
   const badgeHotspots = document.querySelectorAll('.badge-hotspot');
@@ -367,28 +346,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', updateSlider);
     updateSlider();
-  }
-
-  // Orbit Animation Interactive Click Handling -> Open Consultation Modal Form
-  const orbitContainer = document.querySelector('.orbit-system-container');
-  if (orbitContainer) {
-    const orbitCircles = orbitContainer.querySelectorAll('.orbit-center-core, .orbit-node, .orbit-satellite');
-    orbitCircles.forEach(circle => {
-      circle.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const srv = circle.getAttribute('data-service') || 'Tender Bidding & Submission';
-        const modalOverlay = document.getElementById('consultationModal');
-        if (modalOverlay) {
-          modalOverlay.classList.add('active');
-          document.body.style.overflow = 'hidden';
-        }
-        const serviceSelect = document.getElementById('serviceRequired');
-        if (serviceSelect && srv) {
-          serviceSelect.value = srv;
-        }
-      });
-    });
   }
 
   // 4. Consultation Modal Logic
