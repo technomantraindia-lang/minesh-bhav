@@ -3,3 +3,4 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://www.mineshtendering.com/sitemap.xml
+
