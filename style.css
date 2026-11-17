@@ -1378,7 +1378,7 @@ button {
   box-shadow: 0 4px 20px rgba(15, 34, 64, 0.04);
   position: relative;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default;
 }
 
 .service-card::before {
@@ -1752,7 +1752,7 @@ button {
   border: 1.5px solid rgba(255, 255, 255, 0.08);
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
   position: relative;
-  cursor: pointer;
+  cursor: default;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -1966,7 +1966,7 @@ button {
   display: flex;
   gap: 14px;
   align-items: flex-start;
-  cursor: pointer;
+  cursor: default;
   transition: all 0.25s ease;
   box-shadow: 0 4px 12px rgba(15, 34, 64, 0.04);
 }
@@ -2082,7 +2082,7 @@ button {
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default;
 }
 
 .stat-item::before {
@@ -3825,7 +3825,7 @@ button {
   flex-direction: column;
   position: relative;
   transition: all var(--transition-normal);
-  cursor: pointer;
+  cursor: default;
 }
 
 .strength-card:hover {
@@ -9814,6 +9814,33 @@ button {
 .orbit-node,
 .orbit-satellite {
   cursor: default;
+}
+
+/* All pages: content cards are display-only — no modal hyperlink behavior */
+.service-card,
+.industry-card-item,
+.extra-ind-card,
+.stat-item,
+.strength-card,
+.core-service-card,
+.focus-ind-card,
+.govt-segment-card,
+.spec-card,
+.sets-apart-card,
+.action-process-card,
+.why-matter-card,
+.cred-card {
+  cursor: default;
+}
+
+/* Hide leftover Learn More / arrow hyperlink styles after link removal */
+.extra-ind-link,
+.core-service-link,
+.focus-ind-link,
+.govt-segment-link,
+.spec-card-arrow {
+  display: none !important;
+  pointer-events: none !important;
 }
 
 .hero-bottom-bar {
